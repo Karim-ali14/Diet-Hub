@@ -5,4 +5,7 @@
     <color name="colorAccent">#C0CA33</color>
 
     <color name="white">#FFFFFF</color>
+
+    <color name="default_item">#969696</color>
+    <color name="background">#E6E5E5</color>
 </resources>

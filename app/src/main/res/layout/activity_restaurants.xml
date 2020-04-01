@@ -28,44 +28,46 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:src="@drawable/shot"
                     android:layout_gravity="center"
-                    android:src="@drawable/side_nav_bar" />
-
+                    android:padding="5dp"
+                    />
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="40dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/side_nav_bar" />
-
+                    android:src="@drawable/ic_send_black_24dp"
+                    />
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="40dp"
                     android:layout_gravity="left"
-                    android:src="@drawable/side_nav_bar" />
-
+                    android:src="@drawable/ic_search_black_24dp"/>
             </androidx.appcompat.widget.Toolbar>
-
-
         </com.google.android.material.appbar.AppBarLayout>
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AppBer" />
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:id="@+id/points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/viewPager"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/points"

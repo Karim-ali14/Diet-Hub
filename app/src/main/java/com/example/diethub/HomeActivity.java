@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.Menu;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -55,6 +56,9 @@ public class HomeActivity extends AppCompatActivity
         layout = findViewById(R.id.Points);
         setPoints(0);
         viewPager.setOnPageChangeListener(this);
+        getWindow().getDecorView().setSystemUiVisibility
+                (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
+                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
     }
 
     private void setPoints(int position){
