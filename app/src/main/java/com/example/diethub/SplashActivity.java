@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Thread.sleep(5000);
-                    //startActivity(new Intent(getApplicationContext(), Login_Activity.class));
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                     finish(); // finish(); because This Activity close After move To Next Activity And Next Activity will Be Launcher
                 } catch (InterruptedException e) {
                     e.printStackTrace();
