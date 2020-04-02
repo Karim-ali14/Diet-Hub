@@ -47,11 +47,11 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPagerMenu);
         tabLayout = findViewById(R.id.tab);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(new AllOfFood(data),"كل الوجبات");
-        viewPagerAdapter.addFragment(new AllOfFood(data),"الأكثر طلبا");
-        viewPagerAdapter.addFragment(new AllOfFood(data),"اللحوك");
-        viewPagerAdapter.addFragment(new AllOfFood(data),"الشرقي");
-        viewPagerAdapter.addFragment(new AllOfFood(data),"الاسماك");
+        viewPagerAdapter.addFragment(new AllOfFood(data,true),"كل الوجبات");
+        viewPagerAdapter.addFragment(new AllOfFood(data,false),"الأكثر طلبا");
+        viewPagerAdapter.addFragment(new AllOfFood(data,false),"اللحوك");
+        viewPagerAdapter.addFragment(new AllOfFood(data,false),"الشرقي");
+        viewPagerAdapter.addFragment(new AllOfFood(data,false),"الاسماك");
         viewPager.setAdapter(viewPagerAdapter);
     }
 }

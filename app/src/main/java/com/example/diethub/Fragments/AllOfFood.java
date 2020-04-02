@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class AllOfFood extends Fragment {
     boolean bool;
     public AllOfFood(DataOfRestaurants data,boolean bool) {
         this.data = data;
+        this.bool = bool;
     }
 
 
@@ -35,8 +37,11 @@ public class AllOfFood extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.all_food, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.RecyclerForMenu);
+        CardView cardView = view.findViewById(R.id.CardOfList);
         if (bool)
-
+            cardView.setVisibility(View.VISIBLE);
+        else
+            cardView.setVisibility(View.GONE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new AdapterForMenu(getData(),getActivity()));
