@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.diethub.MenuOfResturantsActivity;
 import com.example.diethub.Models.DataOfRestaurants;
 import com.example.diethub.R;
 import com.squareup.picasso.Picasso;
@@ -47,7 +48,8 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                context.startActivity(new Intent(context, MenuOfResturantsActivity.class)
+                        .putExtra("MenuId",data));
             }
         });
 

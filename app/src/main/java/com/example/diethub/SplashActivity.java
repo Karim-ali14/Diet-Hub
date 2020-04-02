@@ -14,7 +14,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(10000);
+                    Thread.sleep(1000);
                     startActivity(new Intent(getApplicationContext(), RestaurantsActivity.class));
                     finish(); // finish(); because This Activity close After move To Next Activity And Next Activity will Be Launcher
                 } catch (InterruptedException e) {
