@@ -10,4 +10,7 @@
     <color name="background">#E6E5E5</color>
     <color name="text">#5F5F5F</color>
     <color name="colorLine">#68CCCCCC</color>
+
+
+    <color name="colorButton">#DDFB8C00</color>
 </resources>

@@ -31,7 +31,6 @@ public class AllOfFood extends Fragment {
         this.bool = bool;
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
