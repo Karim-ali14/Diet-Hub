@@ -26,7 +26,7 @@ public class AdapterForSilder extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_image_slilder, container, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.model_image, container, false);
         ImageView image = view.findViewById(R.id.imageSlider);
         image.setImageResource(list.get(position));
         container.addView(view); // without this line nothing happen
