@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ListOrderActivity"
+            android:label="@string/title_activity_list_order"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".detailsActivity"
             android:label="@string/title_activity_details"
             android:theme="@style/AppTheme.NoActionBar" />

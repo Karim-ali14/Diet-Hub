@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.example.diethub.Adapters.AdapterForSilder;
 import com.example.diethub.Adapters.AdapterForSlider;
+import com.example.diethub.Adapters.AdapterOfResIamge;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -39,7 +40,7 @@ public class detailsActivity extends AppCompatActivity implements ViewPager.OnPa
         list.add(R.drawable.gggggg);
         list.add(R.drawable.diet);
         list.add(R.drawable.gggggg);
-        viewPager.setAdapter(new AdapterForSilder(list,this));
+        viewPager.setAdapter(new AdapterOfResIamge(list,this));
         viewPager.setClipToPadding(false);
         viewPager.setClipChildren(false);
         viewPager.setOffscreenPageLimit(3);

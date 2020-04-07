@@ -379,17 +379,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.viewpager.widget.ViewPager
-                    android:layout_marginTop="10dp"
-                    android:paddingStart="125dp"
-                    android:paddingEnd="125dp"
-                    android:id="@+id/ViewPager"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ImageOFRestaurant" />
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -400,6 +389,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/ViewPager"
                     android:layout_marginTop="10dp"
                     android:id="@+id/Points"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/ViewPager"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:paddingStart="125dp"
+                    android:paddingEnd="125dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ImageOFRestaurant" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 

@@ -363,7 +363,7 @@
                     android:textSize="25dp"
                     android:textColor="#000"/>
 
-                <ImageView
+                <ImageButton
                     android:background="@drawable/style_button"
                     android:layout_width="45dp"
                     android:layout_height="45dp"

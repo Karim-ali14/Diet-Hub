@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
@@ -14,11 +13,11 @@ import com.example.diethub.R;
 
 import java.util.List;
 
-public class AdapterForSilder extends PagerAdapter {
+public class AdapterOfResIamge extends PagerAdapter {
     List<Integer> list;
     Context context;
 
-    public AdapterForSilder(List<Integer> list, Context context) {
+    public AdapterOfResIamge(List<Integer> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -26,7 +25,7 @@ public class AdapterForSilder extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_image_slilder, container, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.model_image, container, false);
         ImageView image = view.findViewById(R.id.imageSlider);
         image.setImageResource(list.get(position));
         container.addView(view); // without this line nothing happen

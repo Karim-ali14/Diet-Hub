@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent=".60"
+                app:layout_constraintGuide_percent=".40"
                 android:id="@+id/line"/>
 
             <ImageView
@@ -70,36 +70,43 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher_background"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/line"
+                app:layout_constraintEnd_toEndOf="@+id/line"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                app:layout_constraintEnd_toStartOf="@+id/line"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/line">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:text="مطاعم"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="25dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="مطاعم"
+                    android:layout_below="@id/text"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="25dp"
-                    android:id="@+id/text"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:padding="2dp"
                     android:text="افضل الوجبات المتاحه لجميع الفئات كل المطاعم"
-                    android:layout_alignParentRight="true"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:layout_below="@id/text"/>
-            </RelativeLayout>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -123,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent=".60"
+                app:layout_constraintGuide_percent=".40"
                 android:id="@+id/line2"/>
 
             <ImageView
@@ -132,36 +139,43 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_launcher_background"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/line2"
+                app:layout_constraintEnd_toEndOf="@+id/line2"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                app:layout_constraintEnd_toStartOf="@+id/line2"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/line2">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:text="مطاعم"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="25dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:text="مطاعم"
+                    android:layout_below="@id/text2"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="25dp"
-                    android:id="@+id/text2"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="افضل الوجبات المتاحه لجميع الفئاتفل كل المطاعم"
-                    android:layout_alignParentRight="true"
+                    android:text="افضل الوجبات المتاحه لجميع الفئات كل المطاعم"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:layout_below="@id/text2"/>
-            </RelativeLayout>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
