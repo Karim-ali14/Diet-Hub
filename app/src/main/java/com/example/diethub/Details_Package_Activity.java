@@ -64,6 +64,9 @@ public class Details_Package_Activity extends AppCompatActivity {
                 return false;
             }
         });*/
+        getWindow().getDecorView().setSystemUiVisibility
+                (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
+                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
     }
 
     public void BackButton(View view) {
