@@ -29,7 +29,7 @@ public class Account_Activity extends AppCompatActivity {
         else if (view.getId() == R.id.cardView2)
             Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
         else if (view.getId() == R.id.cardView3)
-            Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,Addresses_Activity.class));
         else if (view.getId() == R.id.CardView)
             startActivity(new Intent(this,Wallet_Activity.class));
     }
