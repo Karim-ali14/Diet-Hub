@@ -2,6 +2,7 @@ package com.example.diethub;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -30,6 +31,6 @@ public class Account_Activity extends AppCompatActivity {
         else if (view.getId() == R.id.cardView3)
             Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
         else if (view.getId() == R.id.CardView)
-            Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,Wallet_Activity.class));
     }
 }
