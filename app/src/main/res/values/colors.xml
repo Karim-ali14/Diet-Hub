@@ -8,6 +8,7 @@
 
     <color name="default_item">#969696</color>
     <color name="background">#EEEDED</color>
+    <color name="background2">#DBDADA</color>
     <color name="text">#5F5F5F</color>
     <color name="colorLine">#688D8C8C</color>
 
