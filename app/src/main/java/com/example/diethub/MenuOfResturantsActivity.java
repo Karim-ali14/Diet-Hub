@@ -3,6 +3,7 @@ package com.example.diethub;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,6 +36,7 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
         rating.setRating(Float.parseFloat(data.getRating()));
         SetupViewPagerAndTab();
         tabLayout.setupWithViewPager(viewPager);
+
         getWindow().getDecorView().setSystemUiVisibility
                 (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
                         View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -53,5 +55,13 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(new AllOfFood(data,false),"الشرقي");
         viewPagerAdapter.addFragment(new AllOfFood(data,false),"الاسماك");
         viewPager.setAdapter(viewPagerAdapter);
+    }
+
+    public void onClick(View view) {
+        if (view.getId() == R.id.details){
+            startActivity(new Intent(this,detailsActivity.class));
+        }else if (view.getId() == R.id.packages){
+            startActivity(new Intent(this,PackagesActivity.class));
+        }
     }
 }

@@ -6,59 +6,61 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="الرئسية" />
+            android:icon="@drawable/home"
+            android:title="الرئسية"
+            />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="حسابي" />
+            android:icon="@drawable/user"
+            android:title="حسابي"
+            />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/sidecart"
             android:title="سلة الشراء" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/requests"
             android:title="طلباتي" />
         <item
             android:id="@+id/nav_share"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/favourite"
             android:title="المفضلة" />
         <item
             android:id="@+id/nav_send"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/payment"
             android:title="الدفع" />
         <item
             android:id="@+id/nav_slidesho"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/paqaty"
             android:title="باقاتي" />
         <item
             android:id="@+id/nav_tool"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/notifications"
             android:title="الاشعارات" />
         <item
             android:id="@+id/nav_shar"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/estsharat"
             android:title="استشرات التغذيه" />
         <item
             android:id="@+id/nav_sen"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/calccalories"
             android:title="حساب السعرات الحرارية" />
         <item
             android:id="@+id/nav_slidesh"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/about"
             android:title="عن التطبيق" />
         <item
             android:id="@+id/nav_too"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/notes"
             android:title="الشروط والاحكام" />
         <item
             android:id="@+id/nav_sha"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/contactus"
             android:title="اتصل بنا" />
         <item
             android:id="@+id/nav_se"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/language"
             android:title="اللغة" />
     </group>
 

@@ -19,10 +19,9 @@
             app:popupTheme="@style/AppTheme.PopupOverlay"
             >
             <ImageView
-                android:padding="5dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/side_nav_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/toplogo"
                 android:layout_gravity="center"/>
         </androidx.appcompat.widget.Toolbar>
 

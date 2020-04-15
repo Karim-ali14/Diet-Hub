@@ -1,5 +1,6 @@
 package com.example.diethub;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
@@ -36,7 +37,6 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle actionBarDrawerToggle = new
                 ActionBarDrawerToggle(this,drawer,toolbar,R.string.navigation_drawer_open
@@ -48,9 +48,9 @@ public class HomeActivity extends AppCompatActivity
 
         viewPager = findViewById(R.id.ViewPager);
         list = new ArrayList<>();
-        list.add(R.drawable.side_nav_bar);
-        list.add(R.drawable.side_nav_bar);
-        list.add(R.drawable.side_nav_bar);
+        list.add(R.drawable.diet);
+        list.add(R.drawable.diet);
+        list.add(R.drawable.diet);
         viewPager.setAdapter(new AdapterForSilder(list,this));
 
         layout = findViewById(R.id.Points);
@@ -59,6 +59,7 @@ public class HomeActivity extends AppCompatActivity
         getWindow().getDecorView().setSystemUiVisibility
                 (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
                         View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
     }
 
     private void setPoints(int position){
@@ -108,5 +109,9 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public void onPageScrollStateChanged(int state) {
 
+    }
+
+    public void onClick(View view) {
+        startActivity(new Intent(this,RestaurantsActivity.class));
     }
 }

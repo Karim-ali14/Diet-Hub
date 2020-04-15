@@ -6,9 +6,9 @@
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="wrap_content"
         app:cardElevation="5dp"
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="40dp"
         android:layout_centerInParent="true"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
@@ -18,12 +18,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageSlider"
-            android:src="@drawable/side_nav_bar"
+            android:src="@drawable/diet"
             android:scaleType="centerCrop"
             />
     </androidx.cardview.widget.CardView>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_below="@id/Card"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Card"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kejhdkjhdsk"
+            android:textColor="@color/colorLine"/>
+    </RelativeLayout>
 </RelativeLayout>

@@ -6,13 +6,15 @@ import android.os.Parcelable;
 public class DataOfRestaurants implements Parcelable {
     private String Name, Dec, Rating, MenuId;
     private int Icon;
+    private  boolean isfree;
 
-    public DataOfRestaurants(String name, String dec, String rating, String menuId, int icon) {
+    public DataOfRestaurants(String name, String dec, String rating, String menuId, int icon, boolean isfree) {
         Name = name;
         Dec = dec;
         Rating = rating;
         MenuId = menuId;
         Icon = icon;
+        this.isfree = isfree;
     }
 
     protected DataOfRestaurants(Parcel in) {
@@ -21,6 +23,7 @@ public class DataOfRestaurants implements Parcelable {
         Rating = in.readString();
         MenuId = in.readString();
         Icon = in.readInt();
+        isfree = in.readByte() != 0;
     }
 
     @Override
@@ -30,6 +33,7 @@ public class DataOfRestaurants implements Parcelable {
         dest.writeString(Rating);
         dest.writeString(MenuId);
         dest.writeInt(Icon);
+        dest.writeByte((byte) (isfree ? 1 : 0));
     }
 
     @Override
@@ -87,5 +91,17 @@ public class DataOfRestaurants implements Parcelable {
 
     public void setIcon(int icon) {
         Icon = icon;
+    }
+
+    public boolean isIsfree() {
+        return isfree;
+    }
+
+    public void setIsfree(boolean isfree) {
+        this.isfree = isfree;
+    }
+
+    public static Creator<DataOfRestaurants> getCREATOR() {
+        return CREATOR;
     }
 }

@@ -50,21 +50,21 @@ public class AllOfFood extends Fragment {
 
         List<DataOfMenu> list = new ArrayList<>();
         list.add(new DataOfMenu("وجية فراخ مشوية","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "3.5","1","25",R.drawable.chiken));
+                "3.5","1","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("لحم بصوص الجريفي","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "5","1","25",R.drawable.red_meat_guide));
+                "5","1","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("كبسة الدجاج","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "2.5","1","25",R.drawable.ch2));
+                "2.5","1","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("وجية فراخ مشوية","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "1","2","25",R.drawable.gggggg));
+                "1","2","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("وجية فراخ مشوية","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "3","3","25",R.drawable.chiken));
+                "3","3","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("لحم بصوص الجريفي","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "2.5","2","25",R.drawable.red_meat_guide));
+                "2.5","2","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("كبسة الدجاج","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "3.5","3","25",R.drawable.ch2));
+                "3.5","3","25",R.drawable.mmmmm));
         list.add(new DataOfMenu("وجية فراخ مشوية","خليط من صدور واوراك الفراخ المشوية علي الفخم التومية + سلطات وعيش سوري",
-                "4.5","2","25",R.drawable.gggggg));
+                "4.5","2","25",R.drawable.mmmmm));
 
         return list;
     }

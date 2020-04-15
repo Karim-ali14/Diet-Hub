@@ -52,7 +52,10 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
                         .putExtra("MenuId",data));
             }
         });
-
+        if (data.isIsfree())
+            holder.isFree.setVisibility(View.VISIBLE);
+        else
+            holder.isFree.setVisibility(View.GONE);
     }
 
     @Override
@@ -64,7 +67,7 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
         public TextView name,des,numOfRating;
         public RatingBar rating;
         public CardView cardView;
-        public ImageView Icon;
+        public ImageView Icon,isFree;
         public ViewHolderForRes(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.NameOfRes);
@@ -72,6 +75,7 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
             numOfRating = itemView.findViewById(R.id.NumberOfRating);
             rating = itemView.findViewById(R.id.Rating);
             Icon = itemView.findViewById(R.id.IconOfRes);
+            isFree = itemView.findViewById(R.id.isFree);
             cardView = itemView.findViewById(R.id.CardView);
         }
     }

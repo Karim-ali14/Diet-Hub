@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RestaurantsActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
-
         ViewPager viewPager;
         LinearLayout points;
         List<Integer> list;
@@ -86,10 +85,10 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
 
     private List<DataOfRestaurants> getDate(){
         List<DataOfRestaurants> list = new ArrayList<>();
-        list.add(new DataOfRestaurants("مطاعم ليمونة","سلسلة مطاعم ليمونه للاكل الشرقي","4.5","1",R.drawable.lamon));
-        list.add(new DataOfRestaurants("مطاعم دايت ورلد","سلسلة مطاعم ليمونه للاكل الشرقي","5","2",R.drawable.world));
-        list.add(new DataOfRestaurants("مطاعم دايت ديش","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","3",R.drawable.dich));
-        list.add(new DataOfRestaurants("مطاعم دايت إستيشن","سلسلة مطاعم ليمونه للاكل الشرقي","1.5","4",R.drawable.astashn));
+        list.add(new DataOfRestaurants("مطاعم ليمونة","سلسلة مطاعم ليمونه للاكل الشرقي","4.0","2",R.drawable.lamon,true));
+        list.add(new DataOfRestaurants("مطاعم دايت ورلد","سلسلة مطاعم ليمونه للاكل الشرقي","5","2",R.drawable.world,false));
+        list.add(new DataOfRestaurants("مطاعم دايت ديش","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","3",R.drawable.dich,false));
+        list.add(new DataOfRestaurants("مطاعم دايت إستيشن","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","4",R.drawable.astashn,false));
         return list;
     }
 }

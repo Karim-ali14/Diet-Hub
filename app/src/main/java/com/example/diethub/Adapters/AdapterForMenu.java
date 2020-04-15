@@ -1,6 +1,7 @@
 package com.example.diethub.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.diethub.DetailsOfMealActivity;
 import com.example.diethub.Models.DataOfMenu;
 import com.example.diethub.R;
 import com.squareup.picasso.Picasso;
@@ -47,6 +49,12 @@ public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHold
         Picasso.with(context).load(data.getIcon()).into(holder.Icon);
         holder.text1.setPaintFlags(holder.text1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         holder.text2.setPaintFlags(holder.text2.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, DetailsOfMealActivity.class));
+            }
+        });
     }
 
     @Override
@@ -56,7 +64,7 @@ public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHold
 
     public class ViewHolderForMenu extends RecyclerView.ViewHolder {
         public TextView NameOfFood,DecOFFood,NumOfRating,Price,text1,text2;
-        public RatingBar rating;
+        public ImageView rating;
         public CardView cardView;
         public ImageView Icon;
         public ViewHolderForMenu(@NonNull View itemView) {
