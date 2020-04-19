@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,9 +32,9 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
 
         viewPager = findViewById(R.id.ViewPager);
         list = new ArrayList<>();
-        list.add(R.drawable.side_nav_bar);
-        list.add(R.drawable.side_nav_bar);
-        list.add(R.drawable.side_nav_bar);
+        list.add(R.drawable.gggggg);
+        list.add(R.drawable.diet);
+        list.add(R.drawable.dd);
         viewPager.setAdapter(new AdapterForSilder(list,this));
 
         layout = findViewById(R.id.Points);
@@ -68,7 +69,7 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
             if (i == position)
                 imageView[i].setImageDrawable(ContextCompat.getDrawable(this,R.drawable.point_selected));
             else
-                imageView[i].setImageDrawable(ContextCompat.getDrawable(this,R.drawable.point_nono_selected));
+                imageView[i].setImageDrawable(ContextCompat.getDrawable(this,R.drawable.point_nono_selected2));
             LinearLayout.LayoutParams params =
                     new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                             ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -91,5 +92,9 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
     @Override
     public void onPageScrollStateChanged(int state) {
 
+    }
+
+    public void onClick(View view) {
+        startActivity(new Intent(this,ListOrderActivity2.class));
     }
 }

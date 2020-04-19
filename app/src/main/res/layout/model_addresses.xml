@@ -15,22 +15,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp">
+
         <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent=".25"
-            android:id="@+id/Line"/>
+            app:layout_constraintGuide_percent=".15"
+            />
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/Line"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/side_nav_bar"
-            app:layout_constraintVertical_bias=".1"/>
+            android:src="@drawable/myadress"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintHorizontal_bias=".9"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,20 +65,21 @@
             android:layout_marginTop="30dp"
             android:id="@+id/menu"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/requests"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/menu"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
             android:layout_marginTop="30dp"
             android:id="@+id/edit"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_delete_black_24dp"
+            android:src="@drawable/delete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/edit"
             app:layout_constraintTop_toBottomOf="@+id/textView13"

@@ -2,6 +2,7 @@ package com.example.diethub;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
@@ -101,5 +102,9 @@ public class Details_Package_Activity extends AppCompatActivity {
         expandableListDetail.put("FOOTBALL TEAMS", football);
         expandableListDetail.put("BASKETBALL TEAMS", basketball);
         return expandableListDetail;
+    }
+
+    public void onClick(View view) {
+        startActivity(new Intent(this,ListOrderActivity2.class));
     }
 }

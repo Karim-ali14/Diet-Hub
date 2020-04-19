@@ -1,12 +1,12 @@
 package com.example.diethub;
 
-import android.os.Bundle;
-import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+import android.view.View;
 
 import com.example.diethub.Adapters.AdapterOfOrder;
 import com.example.diethub.Models.ModelOfOrder;
@@ -14,15 +14,15 @@ import com.example.diethub.Models.ModelOfOrder;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListOrderActivity extends AppCompatActivity {
+public class ListOrderActivity2 extends AppCompatActivity {
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_order);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

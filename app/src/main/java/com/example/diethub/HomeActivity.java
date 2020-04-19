@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +44,9 @@ public class HomeActivity extends AppCompatActivity
         actionBarDrawerToggle.syncState();
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         viewPager = findViewById(R.id.ViewPager);
         list = new ArrayList<>();
         list.add(R.drawable.diet);
@@ -91,8 +92,14 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Toast.makeText(this, "selected", Toast.LENGTH_SHORT).show();
         drawer.closeDrawer(GravityCompat.START);
+        int itemId = item.getItemId();
+        if (itemId == R.id.myAccount)
+            startActivity(new Intent(this,Account_Activity.class));
+        else if (itemId == R.id.myOrders)
+            startActivity(new Intent(this,Orders_Activity.class));
+        else if (itemId == R.id.listOrder)
+            startActivity(new Intent(this, ListOrderActivity2.class));
         return false;
     }
 

@@ -1,10 +1,12 @@
 package com.example.diethub.Fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diethub.Adapters.AdapterForMenu;
+import com.example.diethub.ListOrderActivity2;
 import com.example.diethub.Models.DataOfMenu;
 import com.example.diethub.Models.DataOfRestaurants;
 import com.example.diethub.R;
@@ -37,6 +40,13 @@ public class AllOfFood extends Fragment {
         View view = inflater.inflate(R.layout.all_food, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.RecyclerForMenu);
         CardView cardView = view.findViewById(R.id.CardOfList);
+        TextView listText = view.findViewById(R.id.listText);
+        listText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ListOrderActivity2.class));
+            }
+        });
         if (bool)
             cardView.setVisibility(View.VISIBLE);
         else

@@ -58,10 +58,12 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        if (view.getId() == R.id.details){
-            startActivity(new Intent(this,detailsActivity.class));
-        }else if (view.getId() == R.id.packages){
-            startActivity(new Intent(this,PackagesActivity.class));
+        if (view.getId() == R.id.details) {
+            startActivity(new Intent(this, Details_Activity.class));
+        } else if (view.getId() == R.id.packages) {
+            startActivity(new Intent(this, PackagesActivity.class));
+        } else if (view.getId() == R.id.ListIcon) {
+            startActivity(new Intent(this, ListOrderActivity2.class));
         }
     }
 }

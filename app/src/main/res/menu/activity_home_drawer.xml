@@ -10,16 +10,16 @@
             android:title="الرئسية"
             />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/myAccount"
             android:icon="@drawable/user"
             android:title="حسابي"
             />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/listOrder"
             android:icon="@drawable/sidecart"
             android:title="سلة الشراء" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/myOrders"
             android:icon="@drawable/requests"
             android:title="طلباتي" />
         <item

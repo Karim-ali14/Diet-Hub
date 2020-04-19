@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Addresses_Activity"
     android:fillViewport="true"
+    android:background="@color/background"
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -45,7 +46,7 @@
             android:id="@+id/profile_image"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:src="@drawable/side_nav_bar"
+            android:src="@drawable/myadress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AppBer"

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -35,5 +36,9 @@ public class PackagesActivity extends AppCompatActivity {
 
     public void BackButton(View view) {
         finish();
+    }
+
+    public void onClick(View view) {
+        startActivity(new Intent(this,ListOrderActivity2.class));
     }
 }

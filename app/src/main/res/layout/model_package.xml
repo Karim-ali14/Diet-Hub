@@ -27,27 +27,28 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:text="باقة ايزي دايت"
             android:textColor="#000"
-            android:textSize="25dp"
+            android:textSize="22dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            android:fontFamily="@font/helveticaneuelt_arabic"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="باقه لانقاص الوزن - (1200 سعره حراريه) مقدمه في"
-            android:textSize="18dp"
-            android:layout_marginTop="7dp"
+            android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9"
             android:id="@+id/Dec"
             android:ellipsize="marquee"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            android:textColor="#000"/>
 
         <LinearLayout
             android:layout_marginTop="25dp"
@@ -124,7 +125,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_place_black_24dp" />
+                    android:src="@drawable/calorie" />
 
                 <TextView
                     android:id="@+id/text1"
@@ -143,7 +144,8 @@
                     android:layout_marginRight="2dp"
                     android:text="ك"
                     android:textColor="#000"
-                    android:textSize="18dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
 
                     />
             </LinearLayout>

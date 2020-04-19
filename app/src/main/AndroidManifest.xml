@@ -9,21 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Orders_Activity"></activity>
+        <activity android:name=".Details_Activity"></activity>
+        <activity android:name=".ListOrderActivity2" />
+        <activity android:name=".Orders_Activity" />
         <activity android:name=".Addresses_Activity" />
         <activity android:name=".Wallet_Activity" />
         <activity android:name=".Account_Activity" />
         <activity android:name=".Details_Package_Activity" />
         <activity android:name=".PackagesActivity" />
         <activity android:name=".RatingsActivity" />
-        <activity
-            android:name=".ListOrderActivity"
-            android:label="@string/title_activity_list_order"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".detailsActivity"
-            android:label="@string/title_activity_details"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DetailsOfMealActivity" />
         <activity android:name=".MenuOfResturantsActivity" />
         <activity android:name=".RestaurantsActivity" />

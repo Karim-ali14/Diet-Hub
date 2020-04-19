@@ -1,31 +1,22 @@
 package com.example.diethub;
 
-import android.os.Bundle;
-
-import com.example.diethub.Adapters.AdapterForSilder;
-import com.example.diethub.Adapters.AdapterForSlider;
-import com.example.diethub.Adapters.AdapterOfResIamge;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.CompositePageTransformer;
-import androidx.viewpager2.widget.MarginPageTransformer;
-import androidx.viewpager2.widget.ViewPager2;
 
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.diethub.Adapters.AdapterOfResIamge;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class detailsActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
+public class Details_Activity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
     ViewPager viewPager;
     LinearLayout layout;
     List<Integer> list;

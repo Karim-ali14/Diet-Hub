@@ -102,13 +102,13 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
 
     private void proceesIN(final ProgressBar progressBar) {
         PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,0,100);
-        barAnimation.setDuration(350);
+        barAnimation.setDuration(700);
         progressBar.setAnimation(barAnimation);
     }
 
     private void proceesDE(final ProgressBar progressBar) {
         PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,100,0);
-        barAnimation.setDuration(350);
+        barAnimation.setDuration(700);
         progressBar.setAnimation(barAnimation);
     }
 

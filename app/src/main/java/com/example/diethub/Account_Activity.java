@@ -16,7 +16,6 @@ public class Account_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_);
         circleImageView = findViewById(R.id.profile_image);
-        circleImageView.setImageResource(R.drawable.chiken);
 
         getWindow().getDecorView().setSystemUiVisibility
                 (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
@@ -32,5 +31,7 @@ public class Account_Activity extends AppCompatActivity {
             startActivity(new Intent(this,Addresses_Activity.class));
         else if (view.getId() == R.id.CardView)
             startActivity(new Intent(this,Wallet_Activity.class));
+        else if (view.getId() == R.id.linearLayout7)
+            startActivity(new Intent(this,Orders_Activity.class));
     }
 }
