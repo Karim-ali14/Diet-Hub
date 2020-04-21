@@ -89,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="مطاعم ليمونة"
-                android:textSize="19dp"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:id="@+id/NameOfFood"
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:text="150"
                     android:textColor="@color/background"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:id="@+id/Price"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
                     android:textColor="@color/default_item"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:textSize="14dp"
+                    android:textSize="13dp"
                     android:id="@+id/DecOfFood"
                     android:maxLines="2"
                     android:ellipsize="end"/>
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:text="4.2"
                         android:textColor="#000"
-                        android:textSize="16dp"
+                        android:textSize="15dp"
                         android:fontFamily="@font/helveticaneuelt_arabic"/>
                 </LinearLayout>
 
@@ -189,7 +189,7 @@
                         android:textColor="#000"
                         android:text="3.2"
                         android:layout_marginRight="2dp"
-                        android:textSize="16dp"
+                        android:textSize="15dp"
                         android:id="@+id/text1"
                         android:fontFamily="@font/helveticaneuelt_arabic"
                         />
@@ -198,7 +198,7 @@
                         android:layout_height="wrap_content"
                         android:text="ك"
                         android:layout_marginRight="2dp"
-                        android:textSize="16dp"
+                        android:textSize="15dp"
                         android:id="@+id/text2"
                         android:textColor="#000"
                         android:fontFamily="@font/helveticaneuelt_arabic"

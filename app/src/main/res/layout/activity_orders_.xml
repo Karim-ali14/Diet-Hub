@@ -77,12 +77,13 @@
                     android:text="تم الاستلام"
                     android:textColor="@color/colorPrimary"
                     android:textSize="19dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:id="@+id/ProcessingText"/>
             </LinearLayout>
 
             <LinearLayout
                 android:onClick="onClick"
-                android:id="@+id/linearLayout10"
+                android:id="@+id/DProgressLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/s_bb2"
@@ -101,12 +102,13 @@
                     android:text="جار التوصيل"
                     android:textColor="@color/colorPrimary"
                     android:textSize="19dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:id="@+id/DProgressText"/>
             </LinearLayout>
 
             <LinearLayout
                 android:onClick="onClick"
-                android:id="@+id/linearLayout9"
+                android:id="@+id/ProcessedLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/s_bb"
@@ -125,7 +127,8 @@
                     android:text="قيد التجهيز"
                     android:textColor="@color/background"
                     android:textSize="19dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:id="@+id/ProcessedText"/>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

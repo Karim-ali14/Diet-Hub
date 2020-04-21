@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -42,6 +43,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
         holder.iconP.setImageResource(R.drawable.ic_check_black_check);
         holder.iconP.setBackground(context.getResources().getDrawable(R.drawable.style_check));
         if (i == 0 && Orders_Activity.b2){
+            holder.OrderButton.setVisibility(View.GONE);
             proceesDE(holder.progressBar2);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_normal);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_normal));
@@ -49,6 +51,8 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                 Orders_Activity.b2 = false;
             }
         }else if (i == 1) {
+            holder.OrderButton.setVisibility(View.VISIBLE);
+            holder.OrderButton.setText("راسل المندوب");
             holder.progressBar.setProgress(100);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_check));
@@ -66,6 +70,8 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                     Orders_Activity.b3 = false;
             }
         }else if (i == 2){
+            holder.OrderButton.setVisibility(View.VISIBLE);
+            holder.OrderButton.setText("اضف تقييمك");
             if (!Orders_Activity.b2 && !Orders_Activity.b3){
                 holder.progressBar.setProgress(100);
                 holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
@@ -88,6 +94,8 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                     Orders_Activity.b3 = true;
             }
         }else if (i == 3){
+            holder.OrderButton.setVisibility(View.VISIBLE);
+            holder.OrderButton.setText("راسل المندوب");
             holder.progressBar2.setProgress(100);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_check));
@@ -120,6 +128,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
     class ViewHolderForOrders extends RecyclerView.ViewHolder {
         ProgressBar progressBar,progressBar2;
         ImageView iconP,iconPreparing,finishIcon;
+        TextView OrderButton;
         public ViewHolderForOrders(@NonNull View itemView) {
             super(itemView);
             progressBar = itemView.findViewById(R.id.progressBar);
@@ -127,6 +136,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
             iconP = itemView.findViewById(R.id.iconP);
             iconPreparing = itemView.findViewById(R.id.iconPreparing);
             finishIcon = itemView.findViewById(R.id.finishIcon);
+            OrderButton = itemView.findViewById(R.id.OrderButton);
         }
     }
 }
