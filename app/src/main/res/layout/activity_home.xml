@@ -13,16 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+    <include
+        layout="@layout/nav_drower"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_home"
-        app:menu="@menu/activity_home_drawer"
-        android:background="@color/white"
-        android:theme="@style/NavigationTextStyle"
         />
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
