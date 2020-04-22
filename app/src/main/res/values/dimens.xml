@@ -7,10 +7,13 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
+    <dimen name="_5sdp">5dp</dimen>
     <dimen name="_10sdp">10dp</dimen>
     <dimen name="_15sdp">15dp</dimen>
     <dimen name="_17sdp">17dp</dimen>
-    <dimen name="_30sdp">30dp</dimen>
     <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_22sdp">22dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+
 
 </resources>
