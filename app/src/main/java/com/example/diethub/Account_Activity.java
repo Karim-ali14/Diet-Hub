@@ -23,8 +23,8 @@ public class Account_Activity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        if (view.getId() == R.id.cardView6)
-            Toast.makeText(this, "6", Toast.LENGTH_SHORT).show();
+        if (view.getId() == R.id.personal_informationCard)
+            startActivity(new Intent(this,Personal_InformationActivity.class));
         else if (view.getId() == R.id.cardView2)
             Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
         else if (view.getId() == R.id.cardView3)

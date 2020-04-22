@@ -201,7 +201,7 @@
         <androidx.cardview.widget.CardView
             android:onClick="onClick"
             android:layout_marginTop="5dp"
-            android:id="@+id/cardView6"
+            android:id="@+id/personal_informationCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -262,7 +262,7 @@
             app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView6"
+            app:layout_constraintTop_toBottomOf="@+id/personal_informationCard"
             android:layout_marginTop="10dp"
             android:id="@+id/cardView2"
             android:onClick="onClick">
