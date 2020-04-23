@@ -25,10 +25,12 @@ import java.util.List;
 public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHolderForMenu> {
     List<DataOfMenu> list;
     Context context;
+    int type;
 
-    public AdapterForMenu(List<DataOfMenu> list, Context context) {
+    public AdapterForMenu(List<DataOfMenu> list, Context context, int type) {
         this.list = list;
         this.context = context;
+        this.type = type;
     }
 
     @NonNull
@@ -55,6 +57,10 @@ public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHold
                 context.startActivity(new Intent(context, DetailsOfMealActivity.class));
             }
         });
+        if (type == 0)
+            holder.favoriteIcon.setImageResource(R.drawable.addfavegreen);
+        else if (type == 1)
+            holder.favoriteIcon.setImageResource(R.drawable.itemfullfave);
     }
 
     @Override
@@ -66,7 +72,7 @@ public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHold
         public TextView NameOfFood,DecOFFood,NumOfRating,Price,text1,text2;
         public ImageView rating;
         public CardView cardView;
-        public ImageView Icon;
+        public ImageView Icon,favoriteIcon;
         public ViewHolderForMenu(@NonNull View itemView) {
             super(itemView);
             NameOfFood = itemView.findViewById(R.id.NameOfFood);
@@ -78,6 +84,7 @@ public class AdapterForMenu extends RecyclerView.Adapter<AdapterForMenu.ViewHold
             text2 = itemView.findViewById(R.id.text2);
             cardView = itemView.findViewById(R.id.CardViewOfMenu);
             Icon = itemView.findViewById(R.id.IconOfFood);
+            favoriteIcon = itemView.findViewById(R.id.favoriteIcon);
         }
     }
 }

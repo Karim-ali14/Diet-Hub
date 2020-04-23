@@ -24,10 +24,12 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
 
     List<DataOfRestaurants> list;
     Context context;
+    int type;
 
-    public AdapterForRestaurants(List<DataOfRestaurants> list, Context context) {
+    public AdapterForRestaurants(List<DataOfRestaurants> list, Context context, int type) {
         this.list = list;
         this.context = context;
+        this.type = type;
     }
 
     @NonNull
@@ -56,6 +58,11 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
             holder.isFree.setVisibility(View.VISIBLE);
         else
             holder.isFree.setVisibility(View.GONE);
+
+        if (type == 0)
+            holder.favoriteIcon.setImageResource(R.drawable.favegreen);
+        else if (type == 1)
+            holder.favoriteIcon.setImageResource(R.drawable.itemfullfave);
     }
 
     @Override
@@ -67,7 +74,7 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
         public TextView name,des,numOfRating;
         public RatingBar rating;
         public CardView cardView;
-        public ImageView Icon,isFree;
+        public ImageView Icon,isFree,favoriteIcon;
         public ViewHolderForRes(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.NameOfRes);
@@ -77,6 +84,7 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
             Icon = itemView.findViewById(R.id.IconOfRes);
             isFree = itemView.findViewById(R.id.isFree);
             cardView = itemView.findViewById(R.id.CardView);
+            favoriteIcon = itemView.findViewById(R.id.favoriteIcon);
         }
     }
 }

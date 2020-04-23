@@ -53,7 +53,7 @@ public class AllOfFood extends Fragment {
             cardView.setVisibility(View.GONE);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(new AdapterForMenu(getData(),getActivity()));
+        recyclerView.setAdapter(new AdapterForMenu(getData(),getActivity(),0));
         return view;
     }
     public List<DataOfMenu> getData(){

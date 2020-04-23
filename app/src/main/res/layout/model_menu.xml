@@ -27,6 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/addfavegreen"
+                android:id="@+id/favoriteIcon"
                 />
             <ImageView
                 android:layout_margin="2dp"

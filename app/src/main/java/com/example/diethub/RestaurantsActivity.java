@@ -42,7 +42,7 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
         Recycler = findViewById(R.id.Recycler);
         Recycler.setHasFixedSize(true);
         Recycler.setLayoutManager(new LinearLayoutManager(this));
-        Recycler.setAdapter(new AdapterForRestaurants(getDate(),this));
+        Recycler.setAdapter(new AdapterForRestaurants(getDate(),this,0));
         getWindow().getDecorView().setSystemUiVisibility
                 (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
                         View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
