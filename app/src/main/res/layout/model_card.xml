@@ -149,20 +149,17 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:layout_margin="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:background="@drawable/style_fevorate"
-                android:padding="3dp"
-                android:src="@drawable/ic_favorite_border_black_24dp" />
-
+                android:src="@drawable/addfavegreen"
+                />
             <ImageView
+                android:layout_margin="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:background="@drawable/style_add"
-                android:padding="3dp"
-                android:src="@drawable/cart" />
+                android:src="@drawable/itemaddcart"
+                />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

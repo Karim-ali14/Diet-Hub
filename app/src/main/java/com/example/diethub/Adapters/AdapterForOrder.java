@@ -1,6 +1,7 @@
 package com.example.diethub.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.diethub.Details_OrderActivity;
 import com.example.diethub.Orders_Activity;
 import com.example.diethub.PrograssBarAnimation;
 import com.example.diethub.R;
@@ -39,6 +41,28 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderForOrders holder, int position) {
+        AnimationProcess(holder,position);
+        holder.AllDetailsText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, Details_OrderActivity.class).putExtra("Type",i));
+            }
+        });
+    }
+
+    private void proceesIN(final ProgressBar progressBar) {
+        PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,0,100);
+        barAnimation.setDuration(700);
+        progressBar.setAnimation(barAnimation);
+    }
+
+    private void proceesDE(final ProgressBar progressBar) {
+        PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,100,0);
+        barAnimation.setDuration(700);
+        progressBar.setAnimation(barAnimation);
+    }
+
+    private void AnimationProcess(ViewHolderForOrders holder,int position){
         holder.progressBar.setProgress(100);
         holder.iconP.setImageResource(R.drawable.ic_check_black_check);
         holder.iconP.setBackground(context.getResources().getDrawable(R.drawable.style_check));
@@ -108,18 +132,6 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
         }
     }
 
-    private void proceesIN(final ProgressBar progressBar) {
-        PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,0,100);
-        barAnimation.setDuration(700);
-        progressBar.setAnimation(barAnimation);
-    }
-
-    private void proceesDE(final ProgressBar progressBar) {
-        PrograssBarAnimation barAnimation = new PrograssBarAnimation(context,progressBar,null,100,0);
-        barAnimation.setDuration(700);
-        progressBar.setAnimation(barAnimation);
-    }
-
     @Override
     public int getItemCount() {
         return list.size();
@@ -128,7 +140,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
     class ViewHolderForOrders extends RecyclerView.ViewHolder {
         ProgressBar progressBar,progressBar2;
         ImageView iconP,iconPreparing,finishIcon;
-        TextView OrderButton;
+        TextView OrderButton,AllDetailsText;
         public ViewHolderForOrders(@NonNull View itemView) {
             super(itemView);
             progressBar = itemView.findViewById(R.id.progressBar);
@@ -137,6 +149,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
             iconPreparing = itemView.findViewById(R.id.iconPreparing);
             finishIcon = itemView.findViewById(R.id.finishIcon);
             OrderButton = itemView.findViewById(R.id.OrderButton);
+            AllDetailsText = itemView.findViewById(R.id.AllDetailsText);
         }
     }
 }

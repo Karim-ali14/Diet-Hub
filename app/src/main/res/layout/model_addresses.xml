@@ -58,7 +58,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_favorite"
+            android:src="@drawable/itemlist"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/Line"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
@@ -79,7 +79,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/delete"
+            android:src="@drawable/favedelete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/edit"
             app:layout_constraintTop_toBottomOf="@+id/textView13"

@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="المعلومات الشخصية"
                 android:layout_gravity="center"
-                android:textSize="26dp"
+                android:textSize="@dimen/_20sdp"
                 android:textColor="#000"
                 />
             <ImageView

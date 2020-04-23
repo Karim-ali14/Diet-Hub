@@ -21,6 +21,10 @@ public class PaymentActivity extends AppCompatActivity {
         init();
     }
     private void init(){
+        getWindow().getDecorView().setSystemUiVisibility
+                (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
+                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
         recyclerView = findViewById(R.id.Recycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

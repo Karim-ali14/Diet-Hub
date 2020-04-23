@@ -24,19 +24,15 @@
             >
             <ImageView
                 android:layout_margin="2dp"
-                android:padding="5dp"
-                android:background="@drawable/style_fevorate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/addfavegreen"
                 />
             <ImageView
                 android:layout_margin="2dp"
-                android:padding="5dp"
-                android:background="@drawable/style_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/cart"
+                android:src="@drawable/itemaddcart"
                 />
         </LinearLayout>
 

@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:text="مطعم الليمونة"
                 android:layout_gravity="center"
-                android:textSize="25dp"
+                android:textSize="@dimen/_20sdp"
                 android:textColor="#000"
                 />
             <LinearLayout

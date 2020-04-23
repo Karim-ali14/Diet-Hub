@@ -11,6 +11,9 @@ public class Choose_Payment_WaysActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose__payment__ways);
+        getWindow().getDecorView().setSystemUiVisibility
+                (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
+                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
     }
 
     public void BackButton(View view) {

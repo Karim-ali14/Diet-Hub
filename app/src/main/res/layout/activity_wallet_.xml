@@ -27,7 +27,7 @@
                     android:layout_height="wrap_content"
                     android:text="محفظتي"
                     android:layout_gravity="center"
-                    android:textSize="26dp"
+                    android:textSize="@dimen/_20sdp"
                     android:textColor="#000"
                     />
                 <ImageView

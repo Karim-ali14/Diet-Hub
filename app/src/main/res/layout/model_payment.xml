@@ -88,7 +88,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
-            android:src="@drawable/delete"
+            android:src="@drawable/favedelete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/edit"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />

@@ -283,7 +283,7 @@
                 android:fontFamily="@font/helveticaneuelt_arabic"/>
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/AllDetailsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -310,7 +310,7 @@
                 android:text="اضف تقييمك"
                 android:textColor="@color/white"
                 android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintStart_toEndOf="@+id/AllDetailsText"
                 app:layout_constraintTop_toBottomOf="@+id/textView20"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
