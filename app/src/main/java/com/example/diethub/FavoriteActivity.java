@@ -86,4 +86,8 @@ public class FavoriteActivity extends AppCompatActivity {
         list.add(new DataOfRestaurants("مطاعم دايت ديش","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","3",R.drawable.dich,false));
         return list;
     }
+
+    public void BackButton(View view) {
+        finish();
+    }
 }
