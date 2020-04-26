@@ -27,8 +27,7 @@
                     android:layout_height="wrap_content"
                     android:text="محفظتي"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/_20sdp"
-                    android:textColor="#000"
+                    style="@style/TitleStyle"
                     />
                 <ImageView
                     android:layout_width="wrap_content"
@@ -68,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="15dp"
-                android:paddingTop="30dp"
+                android:paddingTop="26dp"
                 android:paddingRight="15dp"
                 android:paddingBottom="30dp">
 
@@ -80,7 +79,9 @@
                     android:textSize="18dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:id="@+id/textView11"
@@ -90,7 +91,9 @@
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -103,7 +106,10 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/textView11"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:includeFontPadding="false"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

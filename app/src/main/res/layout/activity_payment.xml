@@ -25,8 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="الدفع"
                 android:layout_gravity="center"
-                android:textSize="@dimen/_20sdp"
-                android:textColor="#000"
+                style="@style/TitleStyle"
                 />
             <ImageView
                 android:layout_width="wrap_content"
@@ -185,9 +184,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="تعديل المعلومات الشخصية"
+        android:text="اضف طريقة دفع جديدة"
         android:textColor="@color/white"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
+        android:fontFamily="@font/helveticaneuelt_arabic"
+        android:includeFontPadding="false"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

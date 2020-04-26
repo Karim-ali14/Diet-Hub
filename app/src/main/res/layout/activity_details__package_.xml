@@ -27,8 +27,7 @@
                     android:layout_height="wrap_content"
                     android:text="باقة ايزي دايت"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/_20sdp"
-                    android:textColor="#000"
+                    style="@style/TitleStyle"
                     />
                 <LinearLayout
                     android:layout_gravity="left"

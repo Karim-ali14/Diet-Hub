@@ -27,8 +27,7 @@
                     android:layout_height="wrap_content"
                     android:text="طلباتي"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/_20sdp"
-                    android:textColor="#000"
+                    style="@style/TitleStyle"
                     />
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>

@@ -24,8 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="اختر طرق الدفع"
                 android:layout_gravity="center"
-                android:textSize="@dimen/_20sdp"
-                android:textColor="#000"
+                style="@style/TitleStyle"
                 />
             <ImageView
                 android:layout_width="wrap_content"

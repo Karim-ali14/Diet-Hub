@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Notification_Activity"></activity>
+        <activity android:name=".Registration_Activity"></activity>
+        <activity android:name=".Login_inActivity" />
+        <activity android:name=".Time_AllocationActivity" />
+        <activity android:name=".Nutritional_CounselingActivity" />
+        <activity android:name=".Conditions_Activity" />
+        <activity android:name=".AboutUs_Activity" />
+        <activity android:name=".Notification_Activity" />
         <activity android:name=".FavoriteActivity" />
         <activity android:name=".Details_OrderActivity" />
         <activity android:name=".Choose_Payment_WaysActivity" />

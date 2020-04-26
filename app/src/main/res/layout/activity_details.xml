@@ -29,8 +29,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="تفاصيل"
-                    android:textColor="#000"
-                    android:textSize="@dimen/_20sdp" />
+                    style="@style/TitleStyle"/>
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
