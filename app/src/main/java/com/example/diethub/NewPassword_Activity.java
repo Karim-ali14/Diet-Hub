@@ -12,15 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Registration_Activity extends AppCompatActivity {
+public class NewPassword_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_);
-        getWindow().getDecorView().setSystemUiVisibility
-                (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
-                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        setContentView(R.layout.activity_new_password_);
     }
 
     public void onClick(View view1) {
@@ -29,19 +26,18 @@ public class Registration_Activity extends AppCompatActivity {
         TextView Massage = view.findViewById(R.id.Massage);
         TextView ButtonText = view.findViewById(R.id.ButtonText);
         Adialog.setView(view);
-        Massage.setText("تم إنشاء حسابك بنجاح");
+        Massage.setText("تم إسترجاع كلمة المرور بنجاح");
         ButtonText.setText("تسجيل دخول");
         ButtonText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Registration_Activity.this,Login_inActivity.class));
+                startActivity(new Intent(NewPassword_Activity.this,Login_inActivity.class));
             }
         });
-    final AlertDialog dialog1 = Adialog.create();
+        final AlertDialog dialog1 = Adialog.create();
         dialog1.setCanceledOnTouchOutside(false);
         dialog1.setCancelable(false);
         dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog1.show();
     }
-
 }

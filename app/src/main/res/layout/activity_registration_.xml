@@ -28,8 +28,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="تسجيل دخول"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -214,13 +217,16 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
         android:background="@drawable/style_rating2"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginLeft="@dimen/_20sdp">
+        android:onClick="onClick">
 
         <TextView
             android:layout_width="wrap_content"
@@ -230,6 +236,7 @@
             android:includeFontPadding="false"
             android:text="دخول"
             android:textColor="@color/white"
-            android:textSize="@dimen/_17sdp" />
+            android:textSize="@dimen/_17sdp"
+            android:paddingBottom="@dimen/_5sdp"/>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
