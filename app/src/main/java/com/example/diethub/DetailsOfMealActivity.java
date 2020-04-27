@@ -1,13 +1,18 @@
 package com.example.diethub;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -95,6 +100,26 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
     }
 
     public void onClick(View view) {
-        startActivity(new Intent(this,ListOrderActivity2.class));
+        if (view.getId() == R.id.favoriteIcon){
+            dialogForFavorite();
+        }else if (view.getId() == R.id.ListIcon)
+            startActivity(new Intent(this,ListOrderActivity2.class));
+    }
+
+    private void dialogForFavorite(){
+        final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(this).inflate(R.layout.dialog_favorite, null);
+        LinearLayout ContainerButton = view.findViewById(R.id.ContainerButton);
+        Adialog.setView(view);
+        final AlertDialog dialog1 = Adialog.create();
+        dialog1.setCanceledOnTouchOutside(false);
+        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog1.show();
+        ContainerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DetailsOfMealActivity.this,FavoriteActivity.class));
+            }
+        });
     }
 }

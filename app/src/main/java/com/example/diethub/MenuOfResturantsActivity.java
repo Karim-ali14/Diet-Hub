@@ -1,12 +1,17 @@
 package com.example.diethub;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -20,7 +25,7 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
     DataOfRestaurants data;
     TextView title;
     RatingBar rating;
-    ImageView Icon;
+    ImageView Icon,favoriteIcon;
     ViewPager viewPager;
     TabLayout tabLayout;
     @Override
@@ -31,6 +36,13 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
         title = findViewById(R.id.title);
         title.setText(data.getName());
         Icon = findViewById(R.id.Icon);
+        favoriteIcon = findViewById(R.id.favoriteIcon);
+        favoriteIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialogForFavorite();
+            }
+        });
         Picasso.with(this).load(data.getIcon()).into(Icon);
         rating = findViewById(R.id.RatingMenu);
         rating.setRating(Float.parseFloat(data.getRating()));
@@ -43,6 +55,23 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
     }
     public void BackButton(View view) {
         finish();
+    }
+
+    private void dialogForFavorite(){
+        final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(this).inflate(R.layout.dialog_favorite, null);
+        LinearLayout ContainerButton = view.findViewById(R.id.ContainerButton);
+        Adialog.setView(view);
+        final AlertDialog dialog1 = Adialog.create();
+        dialog1.setCanceledOnTouchOutside(true);
+        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog1.show();
+        ContainerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuOfResturantsActivity.this, FavoriteActivity.class));
+            }
+        });
     }
 
     private void SetupViewPagerAndTab(){

@@ -55,7 +55,9 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/favegreen" />
+                        android:src="@drawable/favegreen"
+                        android:onClick="onClick"
+                        android:id="@+id/favoriteIcon"/>
                 </LinearLayout>
 
                 <ImageView
@@ -63,7 +65,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:onClick="BackButton"
-                    android:src="@drawable/back" />
+                    android:src="@drawable/back"
+                    />
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -172,15 +175,18 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/ic_star_black"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/starbig"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.2"
                         android:textSize="18dp"
-                        android:textColor="#000"/>
+                        android:textColor="#000"
+                        android:fontFamily="@font/helveticaneuelt_arabic"
+                        android:includeFontPadding="false"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -193,9 +199,9 @@
                     app:layout_constraintStart_toStartOf="@id/guideline"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/ic_star_black"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/caloriebig"/>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -207,7 +213,9 @@
                             android:textSize="18dp"
                             android:textColor="#000"
                             android:layout_marginRight="2dp"
-                            android:layout_marginLeft="2dp"/>
+                            android:layout_marginLeft="2dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -215,7 +223,9 @@
                             android:textSize="18dp"
                             android:textColor="#000"
                             android:layout_marginLeft="2dp"
-                            android:layout_marginRight="2dp"/>
+                            android:layout_marginRight="2dp"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:includeFontPadding="false"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -234,14 +244,15 @@
             android:textSize="22dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CarOfStars" />
+            app:layout_constraintTop_toBottomOf="@+id/CarOfStars"
+            android:includeFontPadding="false"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="خليط من صدور واوراك الفراخ المشويهعلي الفحم التوميه + السلطات والعيش السوريذوق المذاق"
-            android:textSize="20dp"
+            android:textSize="@dimen/_17sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -250,7 +261,9 @@
             android:paddingRight="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textColor="#000"/>
+            android:textColor="#000"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            android:includeFontPadding="false"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
@@ -300,7 +313,8 @@
                         android:layout_marginRight="15dp"
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
-                        android:textSize="17dp"/>
+                        android:textSize="17dp"
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
