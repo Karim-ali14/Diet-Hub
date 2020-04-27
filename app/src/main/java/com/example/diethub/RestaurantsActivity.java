@@ -1,13 +1,18 @@
 package com.example.diethub;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -90,5 +95,24 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
         list.add(new DataOfRestaurants("مطاعم دايت ديش","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","3",R.drawable.dich,false));
         list.add(new DataOfRestaurants("مطاعم دايت إستيشن","سلسلة مطاعم ليمونه للاكل الشرقي","2.5","4",R.drawable.astashn,false));
         return list;
+    }
+
+    public void onClick(View view1) {
+        final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(this).inflate(R.layout.dialog_cournt_location, null);
+        TextView Address = view.findViewById(R.id.Address);
+        ImageView closeIcon = view.findViewById(R.id.closeIcon);
+        Adialog.setView(view);
+        final AlertDialog dialog1 = Adialog.create();
+        dialog1.setCanceledOnTouchOutside(false);
+        dialog1.setCancelable(false);
+        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog1.show();
+        closeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
     }
 }

@@ -37,7 +37,7 @@ public class Registration_Activity extends AppCompatActivity {
                 startActivity(new Intent(Registration_Activity.this,Login_inActivity.class));
             }
         });
-    final AlertDialog dialog1 = Adialog.create();
+        final AlertDialog dialog1 = Adialog.create();
         dialog1.setCanceledOnTouchOutside(false);
         dialog1.setCancelable(false);
         dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

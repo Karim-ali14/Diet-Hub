@@ -237,6 +237,7 @@
             android:text="دخول"
             android:textColor="@color/white"
             android:textSize="@dimen/_17sdp"
-            android:paddingBottom="@dimen/_5sdp"/>
+            android:paddingBottom="@dimen/_5sdp"
+            />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

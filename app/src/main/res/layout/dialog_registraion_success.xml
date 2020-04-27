@@ -60,7 +60,8 @@
                 android:includeFontPadding="false"
                 android:text="تسجيل دخول"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp" />
+                android:textSize="@dimen/_17sdp"
+                />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
