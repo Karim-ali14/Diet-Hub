@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Registration_Activity extends AppCompatActivity {
@@ -28,10 +29,11 @@ public class Registration_Activity extends AppCompatActivity {
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_registraion_success, null);
         TextView Massage = view.findViewById(R.id.Massage);
         TextView ButtonText = view.findViewById(R.id.ButtonText);
+        LinearLayout Button = view.findViewById(R.id.ButtonsLayout);
         Adialog.setView(view);
         Massage.setText("تم إنشاء حسابك بنجاح");
         ButtonText.setText("تسجيل دخول");
-        ButtonText.setOnClickListener(new View.OnClickListener() {
+        Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Registration_Activity.this,Login_inActivity.class));
