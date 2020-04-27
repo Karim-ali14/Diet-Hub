@@ -197,7 +197,9 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_editor_absoluteX="206dp"
                     app:layout_constraintStart_toStartOf="@id/guideline"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/CaloriesLayout">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

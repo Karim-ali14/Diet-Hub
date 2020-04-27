@@ -104,6 +104,8 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
             dialogForFavorite();
         }else if (view.getId() == R.id.ListIcon)
             startActivity(new Intent(this,ListOrderActivity2.class));
+        else if (view.getId() == R.id.CaloriesLayout)
+            dialogForCalories();
     }
 
     private void dialogForFavorite(){
@@ -119,6 +121,23 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DetailsOfMealActivity.this,FavoriteActivity.class));
+            }
+        });
+    }
+
+    private void dialogForCalories(){
+        final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(this).inflate(R.layout.dialog_calories, null);
+        ImageView closeIcon = view.findViewById(R.id.closeIcon);
+        Adialog.setView(view);
+        final AlertDialog dialog1 = Adialog.create();
+        dialog1.setCanceledOnTouchOutside(false);
+        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog1.show();
+        closeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
             }
         });
     }
