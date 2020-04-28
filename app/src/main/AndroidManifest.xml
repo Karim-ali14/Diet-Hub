@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Modify_PasswordActivity"></activity>
+        <activity android:name=".Delivery_AddressesActivity"></activity>
+        <activity android:name=".Modify_PasswordActivity" />
         <activity android:name=".Enter_Discount_CodeActivity" />
         <activity android:name=".Modify_personal_InfoActivity" />
         <activity android:name=".NewPassword_Activity" />

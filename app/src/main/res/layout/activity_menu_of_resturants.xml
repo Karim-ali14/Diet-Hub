@@ -151,7 +151,7 @@
                         android:textSize="19dp"
                         android:textColor="@color/colorPrimary"
                         android:layout_margin="1dp"
-                        android:fontFamily=""/>
+                        />
                 </LinearLayout>
             </LinearLayout>
 
