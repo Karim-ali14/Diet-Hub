@@ -13,9 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.diethub.Adapters.AdapterOfCities;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +35,7 @@ public class Modify_personal_InfoActivity extends AppCompatActivity {
     }
 
     public void onClick(View view1) {
-        final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
+        /*final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_choose_city, null);
         RecyclerView recyclerView = view.findViewById(R.id.Recycler);
         ImageView closeIcon = view.findViewById(R.id.closeIcon);
@@ -50,7 +52,18 @@ public class Modify_personal_InfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dialog1.dismiss();
             }
-        });
+        });*/
+
+        final BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialogTheme);
+        View bottomSheet = LayoutInflater.from(this).inflate(R.layout.dialog_choose_city
+                ,(RelativeLayout)findViewById(R.id.container));
+
+        dialog.setContentView(bottomSheet);
+        dialog.show();
+        RecyclerView recyclerView = bottomSheet.findViewById(R.id.Recycler);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new AdapterOfCities(getData(),this));
     }
 
     private List<String> getData() {
@@ -60,8 +73,7 @@ public class Modify_personal_InfoActivity extends AppCompatActivity {
         list.add("مكة المكرمه");
         list.add("مكة المكرمه");
         list.add("مكة المكرمه");
-        list.add("مكة المكرمه");
-        list.add("مكة المكرمه");
+
         return list;
     }
 }

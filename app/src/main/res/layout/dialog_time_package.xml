@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"
+                    android:text="مدة الباقة"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/_35sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/listbiggreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout20">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/RG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <RadioButton
+                            android:id="@+id/Family"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:onClick="SizeOfFood"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="اسبوعية"
+                            android:textSize="@dimen/_17sdp" />
+
+                        <RadioButton
+                            android:id="@+id/Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:onClick="SizeOfFood"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="شهرية"
+                            android:textSize="@dimen/_17sdp" />
+
+                        <RadioButton
+                            android:id="@+id/Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:onClick="SizeOfFood"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="3 أشهر"
+                            android:textSize="@dimen/_17sdp" />
+
+                        <RadioButton
+                            android:id="@+id/Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:onClick="SizeOfFood"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text=" 6 أشهر"
+                            android:textSize="@dimen/_17sdp" />
+
+                        <RadioButton
+                            android:id="@+id/Syrian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:fontFamily="@font/helveticaneuelt_arabic"
+                            android:onClick="SizeOfFood"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="سنوية"
+                            android:textSize="@dimen/_17sdp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/style_button3"
+        android:fontFamily="@font/helveticaneuelt_arabic"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:text="طلب الباقة"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

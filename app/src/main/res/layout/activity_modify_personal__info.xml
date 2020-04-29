@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Modify_personal_InfoActivity">
+    tools:context=".Modify_personal_InfoActivity"
+    android:background="@color/background">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppBer"
         android:layout_width="match_parent"
@@ -60,21 +61,21 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:background="@drawable/style_textinput"
-            android:drawableRight="@drawable/name"
+            android:drawableStart="@drawable/name"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
             android:hint="قاسم الفهد"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:paddingLeft="@dimen/_20sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingRight="@dimen/_20sdp"
             android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
             app:counterMaxLength="10"
-            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            android:drawableLeft="@drawable/name" />
         <EditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
@@ -82,14 +83,13 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:background="@drawable/style_textinput"
-            android:drawableRight="@drawable/envelope"
+            android:drawableStart="@drawable/envelope"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
             android:hint="fahd@gmail.com"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:paddingLeft="@dimen/_20sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingRight="@dimen/_20sdp"
@@ -97,7 +97,8 @@
             android:textSize="@dimen/_17sdp"
             app:counterMaxLength="10"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
-            android:layout_marginTop="@dimen/_10sdp"/>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/envelope" />
         <EditText
             android:id="@+id/PhoneNumber"
             android:layout_width="match_parent"
@@ -105,14 +106,13 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:background="@drawable/style_textinput"
-            android:drawableRight="@drawable/callgrey"
+            android:drawableStart="@drawable/callgrey"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
             android:hint="00961232424"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:inputType="textPassword"
+            android:inputType="phone"
             android:paddingLeft="@dimen/_20sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingRight="@dimen/_20sdp"
@@ -120,7 +120,8 @@
             android:textSize="@dimen/_17sdp"
             app:counterMaxLength="10"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
-            android:layout_marginTop="@dimen/_10sdp"/>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/callgrey" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -156,6 +157,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
