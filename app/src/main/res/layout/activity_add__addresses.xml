@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Modify_AddressesActivity"
+    tools:context=".Add_AddressesActivity"
     android:background="@color/background">
 
     <ScrollView
@@ -13,10 +13,12 @@
         app:layout_constraintBottom_toTopOf="@+id/AddButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/AppBer"
                 android:layout_width="match_parent"
@@ -26,23 +28,25 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <androidx.appcompat.widget.Toolbar
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <TextView
                         android:id="@+id/title"
+                        style="@style/TitleStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="تعديل العنوان"
                         android:layout_gravity="center"
-                        style="@style/TitleStyle"
-                        />
+                        android:text="أضف عنوان جديد" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/back"
                         android:layout_gravity="right"
                         android:onClick="BackButton"
+                        android:src="@drawable/back"
 
                         />
                 </androidx.appcompat.widget.Toolbar>
@@ -53,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_30sdp"
-                android:src="@drawable/fullyedite"
+                android:src="@drawable/popadress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/AppBer" />
@@ -62,6 +66,9 @@
                 android:id="@+id/AddressName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
                 android:background="@drawable/style_textinput"
                 android:drawableRight="@drawable/edit2"
                 android:drawablePadding="@dimen/_7sdp"
@@ -79,24 +86,21 @@
                 app:counterMaxLength="10"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView14"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"/>
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
                 android:background="@drawable/style_textinput"
                 android:paddingLeft="@dimen/_17sdp"
                 android:paddingTop="@dimen/_17sdp"
                 android:paddingRight="@dimen/_17sdp"
                 android:paddingBottom="@dimen/_17sdp"
-                app:layout_constraintTop_toBottomOf="@+id/AddressName"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp">
+                app:layout_constraintTop_toBottomOf="@+id/AddressName">
 
                 <ImageView
                     android:id="@+id/imageView18"
@@ -120,13 +124,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:id="@+id/ImageLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/gpsgreen"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:id="@+id/ImageLocation"/>
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -149,18 +153,18 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/pin"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias=".8"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias=".7"
-                    app:layout_constraintHorizontal_bias=".8"/>
+                    app:layout_constraintVertical_bias=".7" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -171,12 +175,12 @@
         android:fontFamily="@font/helveticaneuelt_arabic"
         android:includeFontPadding="false"
         android:paddingBottom="@dimen/_5sdp"
-        android:text="حفظ"
+        android:text="إضافة"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/colorPrimary"/>
-
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
