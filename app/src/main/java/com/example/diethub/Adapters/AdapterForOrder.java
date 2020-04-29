@@ -2,19 +2,26 @@ package com.example.diethub.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diethub.Details_OrderActivity;
+import com.example.diethub.FavoriteActivity;
 import com.example.diethub.Orders_Activity;
 import com.example.diethub.PrograssBarAnimation;
 import com.example.diethub.R;
@@ -67,7 +74,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
         holder.iconP.setImageResource(R.drawable.ic_check_black_check);
         holder.iconP.setBackground(context.getResources().getDrawable(R.drawable.style_check));
         if (i == 0 && Orders_Activity.b2){
-            holder.OrderButton.setVisibility(View.GONE);
+            holder.RatingButton.setVisibility(View.GONE);
             proceesDE(holder.progressBar2);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_normal);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_normal));
@@ -75,8 +82,8 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                 Orders_Activity.b2 = false;
             }
         }else if (i == 1) {
-            holder.OrderButton.setVisibility(View.VISIBLE);
-            holder.OrderButton.setText("راسل المندوب");
+            holder.RatingButton.setVisibility(View.VISIBLE);
+            holder.RatingButton.setText("راسل المندوب");
             holder.progressBar.setProgress(100);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_check));
@@ -94,8 +101,14 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                     Orders_Activity.b3 = false;
             }
         }else if (i == 2){
-            holder.OrderButton.setVisibility(View.VISIBLE);
-            holder.OrderButton.setText("اضف تقييمك");
+            holder.RatingButton.setVisibility(View.VISIBLE);
+            holder.RatingButton.setText("اضف تقييمك");
+            holder.RatingButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialogForRating();
+                }
+            });
             if (!Orders_Activity.b2 && !Orders_Activity.b3){
                 holder.progressBar.setProgress(100);
                 holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
@@ -118,8 +131,8 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                     Orders_Activity.b3 = true;
             }
         }else if (i == 3){
-            holder.OrderButton.setVisibility(View.VISIBLE);
-            holder.OrderButton.setText("راسل المندوب");
+            holder.RatingButton.setVisibility(View.VISIBLE);
+            holder.RatingButton.setText("راسل المندوب");
             holder.progressBar2.setProgress(100);
             holder.iconPreparing.setImageResource(R.drawable.ic_check_black_check);
             holder.iconPreparing.setBackground(context.getResources().getDrawable(R.drawable.style_check));
@@ -140,7 +153,7 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
     class ViewHolderForOrders extends RecyclerView.ViewHolder {
         ProgressBar progressBar,progressBar2;
         ImageView iconP,iconPreparing,finishIcon;
-        TextView OrderButton,AllDetailsText;
+        TextView RatingButton,AllDetailsText;
         public ViewHolderForOrders(@NonNull View itemView) {
             super(itemView);
             progressBar = itemView.findViewById(R.id.progressBar);
@@ -148,8 +161,32 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
             iconP = itemView.findViewById(R.id.iconP);
             iconPreparing = itemView.findViewById(R.id.iconPreparing);
             finishIcon = itemView.findViewById(R.id.finishIcon);
-            OrderButton = itemView.findViewById(R.id.OrderButton);
+            RatingButton = itemView.findViewById(R.id.RatingButton);
             AllDetailsText = itemView.findViewById(R.id.AllDetailsText);
         }
+    }
+    private void dialogForRating(){
+        final AlertDialog.Builder Adialog = new AlertDialog.Builder(context);
+        View view = LayoutInflater.from(context).inflate(R.layout.dialog_add_rating, null);
+        EditText RatingBox = view.findViewById(R.id.RatingBox);
+        ImageView closeIcon = view.findViewById(R.id.closeIcon);
+        Button AddRatingButton = view.findViewById(R.id.AddRatingButton);
+        Adialog.setView(view);
+        final AlertDialog dialog1 = Adialog.create();
+        dialog1.setCanceledOnTouchOutside(true);
+        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog1.show();
+        AddRatingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
+        closeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog1.dismiss();
+            }
+        });
     }
 }
