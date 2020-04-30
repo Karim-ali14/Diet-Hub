@@ -119,6 +119,30 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void onClick(View view) {
-        startActivity(new Intent(this,RestaurantsActivity.class));
+        int itemId = view.getId();
+        if (itemId == R.id.nav_myAccount)
+            startActivity(new Intent(this,Account_Activity.class));
+        else if (itemId == R.id.nav_myOrders)
+            startActivity(new Intent(this,Orders_Activity.class));
+        else if (itemId == R.id.nav_listOrder)
+            startActivity(new Intent(this, ListOrderActivity2.class));
+        else if (itemId == R.id.nav_favorite)
+            startActivity(new Intent(this, FavoriteActivity.class));
+        else if (itemId == R.id.nav_packages)
+            startActivity(new Intent(this, PackagesActivity.class));
+        else if (itemId == R.id.nav_notifications)
+            startActivity(new Intent(this, Notification_Activity.class));
+        else if (itemId == R.id.nav_Consulting)
+            startActivity(new Intent(this, Nutritional_CounselingActivity.class));
+        else if (itemId == R.id.nav_about)
+            startActivity(new Intent(this, AboutUs_Activity.class));
+        else if (itemId == R.id.nav_privacy)
+            startActivity(new Intent(this, Conditions_Activity.class));
+        else if (itemId == R.id.nav_contact_us)
+            startActivity(new Intent(this, ConnectWUActivity.class));
+        else if (itemId == R.id.nav_langu)
+            startActivity(new Intent(this, LanguageActivity.class));
+        else if (itemId == R.id.FoodSuppLayout || itemId == R.id.ResLayout)
+            startActivity(new Intent(this,RestaurantsActivity.class));
     }
 }

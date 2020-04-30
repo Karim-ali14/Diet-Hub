@@ -25,6 +25,16 @@ public class Registration_Activity extends AppCompatActivity {
     }
 
     public void onClick(View view1) {
+
+        if (view1.getId() == R.id.conditions){
+            startActivity(new Intent(Registration_Activity.this,Conditions_Activity.class));
+        }else if (view1.getId() == R.id.EnterButton){
+            showSuccessDialog();
+        }
+
+    }
+
+    private void showSuccessDialog() {
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_registraion_success, null);
         TextView Massage = view.findViewById(R.id.Massage);

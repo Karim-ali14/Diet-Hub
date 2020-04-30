@@ -58,7 +58,7 @@
         android:gravity="center_vertical">
 
         <ImageView
-            android:id="@+id/imageView22"
+            android:id="@+id/imageArabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/arabic"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/ArabicText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/helveticaneuelt_arabic"
@@ -75,9 +75,12 @@
             android:text="العربية"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
-            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/imageArabic"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"/>
+            android:layout_marginRight="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -109,7 +112,7 @@
         android:gravity="center_vertical">
 
         <ImageView
-            android:id="@+id/imageView22"
+            android:id="@+id/imageEng"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/english"
@@ -118,7 +121,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/EnglishText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/helveticaneuelt_arabic"
@@ -126,9 +129,11 @@
             android:text="english"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
-            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/imageEng"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"/>
+            android:layout_marginRight="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
             android:layout_width="wrap_content"

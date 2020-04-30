@@ -1,243 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Registration_Activity">
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/AppBer"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <androidx.appcompat.widget.Toolbar
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/AppBer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/title"
-                    style="@style/TitleStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="تسجيل دخول"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/TitleStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="تسجيل دخول"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cancel"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginRight="@dimen/_20sdp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:src="@drawable/logostart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AppBer" />
-
-    <EditText
-        android:id="@+id/NameOfUser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style_textinput"
-        android:drawableRight="@drawable/user"
-        android:drawablePadding="@dimen/_7sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:gravity="right"
-        android:hint="رقم الجوال"
-        android:importantForAutofill="noExcludeDescendants"
-        android:includeFontPadding="false"
-        android:inputType="phone"
-        android:paddingLeft="@dimen/_20sdp"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingRight="@dimen/_20sdp"
-        android:paddingBottom="15dp"
-        android:textSize="@dimen/_17sdp"
-        app:counterMaxLength="10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_15sdp" />
-
-    <EditText
-        android:id="@+id/PhoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/phone"
-        android:drawablePadding="@dimen/_7sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:gravity="right"
-        android:hint="كلمة المرور"
-        android:importantForAutofill="noExcludeDescendants"
-        android:includeFontPadding="false"
-        android:inputType="textPassword"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingLeft="@dimen/_20sdp"
-        android:paddingRight="@dimen/_20sdp"
-        android:paddingBottom="15dp"
-        android:textSize="@dimen/_17sdp"
-        app:counterMaxLength="10"
-        app:layout_constraintTop_toBottomOf="@+id/NameOfUser"
-        android:background="@drawable/style_textinput"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        />
-    <EditText
-        android:id="@+id/Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/padlock"
-        android:drawablePadding="@dimen/_7sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:gravity="right"
-        android:hint="كلمة المرور"
-        android:importantForAutofill="noExcludeDescendants"
-        android:includeFontPadding="false"
-        android:inputType="textPassword"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingLeft="@dimen/_20sdp"
-        android:paddingRight="@dimen/_20sdp"
-        android:paddingBottom="15dp"
-        android:textSize="@dimen/_17sdp"
-        app:counterMaxLength="10"
-        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
-        android:background="@drawable/style_textinput"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        />
-    <EditText
-        android:id="@+id/RePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/padlock"
-        android:drawablePadding="@dimen/_7sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:gravity="right"
-        android:hint="كلمة المرور"
-        android:importantForAutofill="noExcludeDescendants"
-        android:includeFontPadding="false"
-        android:inputType="textPassword"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingLeft="@dimen/_20sdp"
-        android:paddingRight="@dimen/_20sdp"
-        android:paddingBottom="15dp"
-        android:textSize="@dimen/_17sdp"
-        app:counterMaxLength="10"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
-        android:background="@drawable/style_textinput"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/linearLayout14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/RePassword"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cancel"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
 
         <ImageView
-            android:id="@+id/chickBox"
+            android:id="@+id/imageView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/helveticaneuelt_arabic"
-            android:text="نسيت كلمة المرور ؟"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_17sdp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/logostart"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/tockbg"/>
+            app:layout_constraintTop_toBottomOf="@+id/AppBer" />
 
-        <TextView
-            android:id="@+id/ForgottenPassword"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/NameOfUser"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:background="@drawable/style_textinput"
+            android:drawableRight="@drawable/user"
+            android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
+            android:gravity="right"
+            android:hint="رقم الجوال"
+            android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:onClick="getPassword"
-            android:text="أنا أوافق على كل"
-            android:textColor="@color/text2"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/chickBox"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:paddingBottom="@dimen/_5sdp"/>
+            app:counterMaxLength="10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/PhoneNumber"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/helvetica_bold"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_17sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ForgottenPassword"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
-            android:text="الشروط والاحكام"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/style_rating2"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingBottom="@dimen/_17sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:onClick="onClick">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/phone"
+            android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
+            android:gravity="right"
+            android:hint="كلمة المرور"
+            android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:text="دخول"
-            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
-            android:paddingBottom="@dimen/_5sdp"
+            app:counterMaxLength="10"
+            app:layout_constraintTop_toBottomOf="@+id/NameOfUser"
+            android:background="@drawable/style_textinput"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             />
-    </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/padlock"
+            android:drawablePadding="@dimen/_7sdp"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            android:gravity="right"
+            android:hint="كلمة المرور"
+            android:importantForAutofill="noExcludeDescendants"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="15dp"
+            android:textSize="@dimen/_17sdp"
+            app:counterMaxLength="10"
+            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
+            android:background="@drawable/style_textinput"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <EditText
+            android:id="@+id/RePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/padlock"
+            android:drawablePadding="@dimen/_7sdp"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            android:gravity="right"
+            android:hint="كلمة المرور"
+            android:importantForAutofill="noExcludeDescendants"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="15dp"
+            android:textSize="@dimen/_17sdp"
+            app:counterMaxLength="10"
+            app:layout_constraintTop_toBottomOf="@+id/Password"
+            android:background="@drawable/style_textinput"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/RePassword"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:id="@+id/chickBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/helveticaneuelt_arabic"
+                android:text="نسيت كلمة المرور ؟"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/tockbg"/>
+
+            <TextView
+                android:id="@+id/ForgottenPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/helveticaneuelt_arabic"
+                android:includeFontPadding="false"
+                android:text="أنا أوافق على كل"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chickBox"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ForgottenPassword"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="الشروط والاحكام"
+                android:onClick="onClick"
+                android:id="@+id/conditions"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/EnterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/style_rating2"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_17sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/helveticaneuelt_arabic"
+                android:includeFontPadding="false"
+                android:text="دخول"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
