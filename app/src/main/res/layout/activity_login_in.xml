@@ -27,7 +27,7 @@
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="تسجيل دخول"
+                    android:text="@string/Login"
                     android:layout_gravity="center"
                     style="@style/TitleStyle"
                     />
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/helvetica_bold"
             android:includeFontPadding="false"
-            android:text="مرحباً بك !"
+            android:text="@string/Hallo"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_35sdp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:includeFontPadding="false"
-            android:text="سجل دخول لإستخدام التطبيق"
+            android:text="@string/LoginToUseApp"
             android:textColor="@color/text2"
             android:textSize="@dimen/_20sdp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,11 +75,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
-            android:drawableRight="@drawable/phone"
+            android:drawableStart="@drawable/phone"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
-            android:hint="رقم الجوال"
+            android:gravity="start"
+            android:hint="@string/PhoneNumber"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
             android:inputType="phone"
@@ -92,17 +92,17 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_15sdp"
-            />
+            android:drawableLeft="@drawable/phone" />
 
         <EditText
             android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/padlock"
+            android:drawableStart="@drawable/padlock"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
-            android:hint="كلمة المرور"
+            android:gravity="start"
+            android:hint="@string/Password"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
             android:inputType="textPassword"
@@ -116,15 +116,15 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            />
+            android:drawableLeft="@drawable/padlock" />
 
         <TextView
             android:id="@+id/ForgottenPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:onClick="getPassword"
-            android:text="نسيت كلمة المرور ؟"
+            android:onClick="onClick"
+            android:text="@string/ForgotPassword"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_17sdp"
             android:textStyle="bold"
@@ -135,8 +135,8 @@
             android:layout_marginTop="@dimen/_15sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"/>
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout2"
+        <Button
+            android:id="@+id/EnterButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
@@ -146,18 +146,12 @@
             app:layout_constraintTop_toBottomOf="@+id/ForgottenPassword"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/helveticaneuelt_arabic"
-                android:includeFontPadding="false"
-                android:text="دخول"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp" />
-        </RelativeLayout>
+            android:text="@string/EnterButton"
+            android:textSize="@dimen/_17sdp"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            />
 
         <LinearLayout
             android:id="@+id/LayoutOfEmail"
@@ -178,7 +172,7 @@
                 android:layout_toRightOf="@id/newAccount"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:includeFontPadding="false"
-                android:text="لست مشترك ؟"
+                android:text="@string/NotRegister"
                 android:textColor="#000"
                 android:textSize="20dp"
                 />
@@ -188,8 +182,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:includeFontPadding="false"
-                android:onClick="createNewAccount"
-                android:text=" إشترك الأن"
+                android:onClick="onClick"
+                android:text="@string/RegisterNow"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp"
                 android:textStyle="bold" />
