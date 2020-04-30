@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Thread.sleep(2000);
-                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(), Response_TimeActivity.class));
                     finish(); // finish(); because This Activity close After move To Next Activity And Next Activity will Be Launcher
                 } catch (InterruptedException e) {
                     e.printStackTrace();
