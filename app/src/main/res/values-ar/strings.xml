@@ -35,8 +35,8 @@
 
     <string name="EnterButton">دخول</string>
 
-    <string name="NotRegister"> لست مشترك ؟ </string>
+    <string name="NotRegister"> لست مشترك ؟</string>
 
     <string name="RegisterNow"> إشترك الأن </string>
-
+    <string name="english">عربى</string>
 </resources>

@@ -72,13 +72,13 @@
 
         <EditText
             android:id="@+id/PhoneNumber"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
             android:drawableStart="@drawable/phone"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="start"
+            android:gravity="center"
             android:hint="@string/PhoneNumber"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
@@ -89,19 +89,20 @@
             android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/textView29"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
+            app:layout_constraintWidth_percent=".9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
             android:drawableLeft="@drawable/phone" />
 
         <EditText
             android:id="@+id/Password"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/padlock"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="start"
+            android:gravity="center"
             android:hint="@string/Password"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
@@ -113,8 +114,9 @@
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
             android:background="@drawable/style_textinput"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
+            app:layout_constraintWidth_percent=".9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_10sdp"
             android:drawableLeft="@drawable/padlock" />
 
@@ -150,7 +152,6 @@
             android:textSize="@dimen/_17sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:textColor="@color/white"
-            android:onClick="onClick"
             />
 
         <LinearLayout
@@ -176,14 +177,14 @@
                 android:textColor="#000"
                 android:textSize="20dp"
                 />
+
             <TextView
                 android:id="@+id/newAccount"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:includeFontPadding="false"
-                android:onClick="onClick"
-                android:text="@string/RegisterNow"
+                android:text="@string/english"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp"
                 android:textStyle="bold" />
