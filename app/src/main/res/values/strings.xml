@@ -40,5 +40,16 @@
     <string name="english">English</string>
     <string name="EnterPhoneToSendPassword">Enter the mobile number to send the password recovery code</string>
     <string name="SendCode">Send Code</string>
+    <string name="enter_code_to_password">أدخل كود إسترجاع كلمة المرور المرسل على رقم جوالك</string>
+    <string name="PasswordRecovery">إسترجاع كلمة المرور</string>
+    <string name="About_Us">عن الطبيق</string>
+    <string name="Myaccount">حسابي</string>
+    <string name="Prsonal_info">المعلومات الشخصية</string>
+    <string name="Modify_password">تعديل كلمة المرور</string>
+    <string name="MyAddresses">عناويني</string>
+    <string name="MyWallet">محفظتي</string>
+    <string name="Ratings">التقييمات</string>
+    <string name="Payments">المدفوعات</string>
+    <string name="Count_Orders">عدد الطلبات</string>
 
 </resources>

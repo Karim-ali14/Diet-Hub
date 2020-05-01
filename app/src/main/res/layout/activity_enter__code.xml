@@ -51,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/helveticaneuelt_arabic"
-        android:text="أدخل رقم الجوال لإرسال كود إسترجاع كلمة المرور"
+        android:text="@string/enter_code_to_password"
         android:textColor="#000"
         android:textSize="@dimen/_18sdp"
         app:layout_constraintEnd_toEndOf="@+id/guideline8"
@@ -133,27 +133,20 @@
             android:layout_marginRight="@dimen/_20sdp"/>
     </RelativeLayout>
 
-    <RelativeLayout
+    <Button
         android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/style_rating2"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_17sdp"
+        android:text="@string/PasswordRecovery"
+        app:layout_constraintWidth_percent=".9"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CodesLayout"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/helveticaneuelt_arabic"
-            android:includeFontPadding="false"
-            android:text="إسترجاع كلمة المرور"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_17sdp"
-            android:paddingBottom="@dimen/_5sdp"/>
-    </RelativeLayout>
+        android:fontFamily="@font/helveticaneuelt_arabic"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
