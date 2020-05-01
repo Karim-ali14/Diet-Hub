@@ -39,4 +39,6 @@
 
     <string name="RegisterNow"> إشترك الأن </string>
     <string name="english">عربى</string>
+    <string name="EnterPhoneToSendPassword">أدخل رقم الجوال لإرسال كود إسترجاع كلمة المرور</string>
+    <string name="SendCode">إرسال الكود</string>
 </resources>

@@ -38,5 +38,7 @@
 
     <string name="RegisterNow"> Register Now </string>
     <string name="english">English</string>
+    <string name="EnterPhoneToSendPassword">Enter the mobile number to send the password recovery code</string>
+    <string name="SendCode">Send Code</string>
 
 </resources>
