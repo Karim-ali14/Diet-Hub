@@ -41,7 +41,7 @@
             android:paddingRight="20dp"
             android:paddingBottom="10dp"
             android:gravity="center"
-            android:text="إختر من التالي لإستكمال تصفح التطبيق بكل سهولة وأمان"
+            android:text="@string/Select_To_Complete_Browsing"
             android:textSize="19dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

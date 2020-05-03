@@ -28,7 +28,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="سلة الشراء"
+                    android:text="@string/List_Shopping"
                     style="@style/TitleStyle" />
 
                 <LinearLayout
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:text="هل تملك كود خاص ؟"
+                android:text="@string/Have_Code"
                 android:textColor="#000"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="طريقه الدفع"
+                android:text="@string/Payment_Method_WithOut_Points"
                 android:textColor="#000"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -212,7 +212,7 @@
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="عنوان التواصل"
+                android:text="@string/ContactAddress"
                 android:textColor="#000"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -297,7 +297,7 @@
                 android:id="@+id/DetailsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="تفاصيل الدفع "
+                android:text="@string/Payment_Details"
                 android:textColor="#000"
                 android:textSize="19dp"
                 android:textStyle="bold"
@@ -319,7 +319,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="السعر الكلي"
+                    android:text="@string/Total_Price"
                     android:textSize="17sp"
                     android:fontFamily="@font/helveticaneuelt_arabic"
                     android:textColor="#000"
@@ -328,7 +328,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="الخصم"
+                    android:text="@string/Discount"
                     android:textSize="17sp"
                     android:fontFamily="@font/helveticaneuelt_arabic"
                     android:textColor="#000" />
@@ -336,7 +336,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="الاجالي"
+                    android:text="@string/Total"
                     android:textSize="17sp"
                     android:fontFamily="@font/helveticaneuelt_arabic"
                     android:textColor="#000" />
@@ -405,7 +405,7 @@
                 android:background="@drawable/style_button3"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="تنفيذ الطلب"
+                android:text="@string/Executing_Request"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -420,7 +420,7 @@
                 android:background="@drawable/style_button2"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="الغاء الطلب"
+                android:text="@string/Cancelling_Order"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp"
                 android:textStyle="bold"/>

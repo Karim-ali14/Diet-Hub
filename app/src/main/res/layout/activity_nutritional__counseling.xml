@@ -26,7 +26,7 @@
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="إستشارات التغذية"
+                    android:text="@string/Nutritional_Counseling"
                     android:layout_gravity="center"
                     style="@style/TitleStyle"
                     />
@@ -67,7 +67,7 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="أولاً"
+                android:text="@string/Firstly"
                 android:textColor="#000"
                 android:textSize="@dimen/_22sdp" />
 
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="ثانياً"
+                android:text="@string/Secondly"
                 android:textColor="#000"
                 android:textSize="@dimen/_22sdp" />
 
@@ -147,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="ثالثاً"
+                android:text="@string/Third"
                 android:textColor="#000"
                 android:textSize="@dimen/_22sdp" />
 
@@ -181,7 +181,7 @@
             android:gravity="center"
             android:paddingLeft="@dimen/_10sdp"
             android:paddingRight="@dimen/_10sdp"
-            android:text="إذا كان لديك أي إستفسار يرجى التواصل معنا عبر الواتساب"
+            android:text="@string/Have_Inquiry"
             android:textColor="#000"
             android:textSize="@dimen/_18sdp"
             app:layout_constraintEnd_toEndOf="parent"

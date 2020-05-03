@@ -22,7 +22,7 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="المعلومات الشخصية"
+                android:text="@string/Personal_info"
                 android:layout_gravity="center"
                 style="@style/TitleStyle"
                 />
@@ -64,28 +64,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="اسم المستخدم"
+            android:text="@string/User_Name"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="البريد الالكتروني"
+            android:text="@string/Email"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="رقم الجوال"
+            android:text="@string/PhoneNumber"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="المدينة"
+            android:text="@string/City"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"/>
@@ -140,7 +140,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="تعديل المعلومات الشخصية"
+        android:text="@string/Modify_Personal_Info"
         android:textColor="@color/white"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"

@@ -25,7 +25,7 @@
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="طلباتي"
+                    android:text="@string/My_Orders"
                     android:layout_gravity="center"
                     style="@style/TitleStyle"
                     />
@@ -73,7 +73,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="تم الاستلام"
+                    android:text="@string/Received"
                     android:textColor="@color/colorPrimary"
                     android:textSize="19dp"
                     android:textStyle="bold"
@@ -98,7 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="جار التوصيل"
+                    android:text="@string/Delivery_In_Progress"
                     android:textColor="@color/colorPrimary"
                     android:textSize="19dp"
                     android:textStyle="bold"
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="قيد التجهيز"
+                    android:text="@string/Being_Processed"
                     android:textColor="@color/background"
                     android:textSize="19dp"
                     android:textStyle="bold"

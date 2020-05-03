@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/helvetica_bold"
             android:includeFontPadding="false"
-            android:text="السعرات الحرارية"
+            android:text="@string/Calories"
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +70,7 @@
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:paddingBottom="@dimen/_5sdp"
-                android:text="كارب"
+                android:text="@string/Carb"
                 android:textColor="#000"
                 android:textSize="@dimen/_15sdp" />
 
@@ -132,7 +132,7 @@
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:paddingBottom="@dimen/_5sdp"
-                android:text="دهون"
+                android:text="@string/Fats"
                 android:textColor="#000"
                 android:textSize="@dimen/_15sdp" />
 
@@ -193,7 +193,7 @@
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:paddingBottom="@dimen/_5sdp"
-                android:text="بروتين"
+                android:text="@string/Protein"
                 android:textColor="#000"
                 android:textSize="@dimen/_15sdp" />
 
@@ -267,7 +267,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:paddingBottom="@dimen/_5sdp"
-                android:text="اجمالي السعرات الحرارية"
+                android:text="@string/Total_Calories"
                 android:textColor="#000"
                 android:textSize="@dimen/_15sdp"
                 app:layout_constraintBottom_toBottomOf="parent"

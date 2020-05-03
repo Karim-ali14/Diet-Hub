@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="أضف عنوان جديد" />
+                        android:text="@string/Add_New_Address" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
                 android:drawablePadding="@dimen/_7sdp"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:gravity="right"
-                android:hint="أدخل عنوان الموقع"
+                android:hint="@string/Enter_NameOf_Location"
                 android:importantForAutofill="noExcludeDescendants"
                 android:includeFontPadding="false"
                 android:inputType="textPassword"
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
-                    android:text="أدخل العنوان هنا"
+                    android:text="@string/Enter_Address_here"
                     android:textColor="@color/text"
                     android:textSize="@dimen/_17sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -175,7 +175,7 @@
         android:fontFamily="@font/helveticaneuelt_arabic"
         android:includeFontPadding="false"
         android:paddingBottom="@dimen/_5sdp"
-        android:text="إضافة"
+        android:text="@string/Add"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp"
         app:layout_constraintBottom_toBottomOf="parent"

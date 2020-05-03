@@ -26,7 +26,7 @@
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="الشروط والأحكام"
+                    android:text="@string/Terms_Conditions"
                     android:layout_gravity="center"
                     style="@style/TitleStyle"
                     />

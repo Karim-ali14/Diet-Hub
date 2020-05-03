@@ -55,7 +55,7 @@
         android:layout_marginRight="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:fontFamily="@font/helvetica_bold"
-        android:text="طريقة الدفع الأساسية"
+        android:text="@string/Primary_PaymentMethod"
         android:textColor="#000"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintStart_toStartOf="parent"

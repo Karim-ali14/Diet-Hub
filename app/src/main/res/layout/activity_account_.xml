@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/Count_Orders"
+                    android:text="@string/Number_Requests"
                     android:textColor="#000"
                     android:textSize="15dp"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
@@ -233,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="@string/Prsonal_info"
+                    android:text="@string/Personal_info"
                     android:textColor="#000"
                     android:textSize="17sp"
                     app:layout_constraintBottom_toBottomOf="parent"

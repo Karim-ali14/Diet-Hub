@@ -30,7 +30,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="تسجيل دخول"
+                        android:text="@string/Create_New_Account"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
-            android:drawableRight="@drawable/user"
+            android:drawableStart="@drawable/user_r"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:gravity="right"
@@ -82,20 +82,21 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_15sdp" />
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawableLeft="@drawable/user_r" />
 
         <EditText
             android:id="@+id/PhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/phone"
+            android:drawableStart="@drawable/phone"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:gravity="right"
-            android:hint="كلمة المرور"
+            android:hint="@string/PhoneNumber"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
-            android:inputType="textPassword"
+            android:inputType="phone"
             android:paddingTop="@dimen/_10sdp"
             android:paddingLeft="@dimen/_20sdp"
             android:paddingRight="@dimen/_20sdp"
@@ -107,16 +108,16 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            />
+            android:drawableLeft="@drawable/phone" />
         <EditText
             android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/padlock"
+            android:drawableStart="@drawable/padlock"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:gravity="right"
-            android:hint="كلمة المرور"
+            android:hint="@string/Password"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
             android:inputType="textPassword"
@@ -131,16 +132,16 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            />
+            android:drawableLeft="@drawable/padlock" />
         <EditText
             android:id="@+id/RePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/padlock"
+            android:drawableStart="@drawable/padlock"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:gravity="right"
-            android:hint="كلمة المرور"
+            android:hint="@string/Confirm_Pass"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
             android:inputType="textPassword"
@@ -155,7 +156,7 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            />
+            android:drawableLeft="@drawable/padlock" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout14"
@@ -190,7 +191,7 @@
                 android:layout_alignParentRight="true"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:includeFontPadding="false"
-                android:text="أنا أوافق على كل"
+                android:text="@string/I_Agree_On"
                 android:textColor="@color/text2"
                 android:textSize="@dimen/_17sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -212,13 +213,13 @@
                 android:layout_marginRight="@dimen/_5sdp"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:paddingBottom="@dimen/_5sdp"
-                android:text="الشروط والاحكام"
+                android:text="@string/Terms_Conditions"
                 android:onClick="onClick"
                 android:id="@+id/conditions"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <RelativeLayout
+        <Button
             android:id="@+id/EnterButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -231,19 +232,10 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
-            android:onClick="onClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/helveticaneuelt_arabic"
-                android:includeFontPadding="false"
-                android:text="دخول"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp"
-                android:paddingBottom="@dimen/_5sdp"
-                />
-        </RelativeLayout>
+            android:onClick="onClick"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/white"
+            android:text="@string/Create_Account"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

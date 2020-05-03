@@ -39,7 +39,7 @@
                     android:layout_marginRight="@dimen/_30sdp"
                     android:fontFamily="@font/helveticaneuelt_arabic"
                     android:includeFontPadding="false"
-                    android:text="مدة الباقة"
+                    android:text="@string/Duration_package"
                     android:textColor="@color/text2"
                     android:textSize="@dimen/_35sdp" />
 
@@ -80,7 +80,7 @@
                             android:fontFamily="@font/helveticaneuelt_arabic"
                             android:onClick="SizeOfFood"
                             android:paddingBottom="@dimen/_10sdp"
-                            android:text="اسبوعية"
+                            android:text="@string/weekly"
                             android:textSize="@dimen/_17sdp" />
 
                         <RadioButton
@@ -94,7 +94,7 @@
                             android:fontFamily="@font/helveticaneuelt_arabic"
                             android:onClick="SizeOfFood"
                             android:paddingBottom="@dimen/_10sdp"
-                            android:text="شهرية"
+                            android:text="@string/Monthly"
                             android:textSize="@dimen/_17sdp" />
 
                         <RadioButton
@@ -108,7 +108,7 @@
                             android:fontFamily="@font/helveticaneuelt_arabic"
                             android:onClick="SizeOfFood"
                             android:paddingBottom="@dimen/_10sdp"
-                            android:text="3 أشهر"
+                            android:text="@string/Three_Months"
                             android:textSize="@dimen/_17sdp" />
 
                         <RadioButton
@@ -122,7 +122,7 @@
                             android:fontFamily="@font/helveticaneuelt_arabic"
                             android:onClick="SizeOfFood"
                             android:paddingBottom="@dimen/_10sdp"
-                            android:text=" 6 أشهر"
+                            android:text="@string/Six_Months"
                             android:textSize="@dimen/_17sdp" />
 
                         <RadioButton
@@ -136,7 +136,7 @@
                             android:fontFamily="@font/helveticaneuelt_arabic"
                             android:onClick="SizeOfFood"
                             android:paddingBottom="@dimen/_10sdp"
-                            android:text="سنوية"
+                            android:text="@string/Yearly"
                             android:textSize="@dimen/_17sdp" />
                     </RadioGroup>
 
@@ -155,7 +155,7 @@
         android:paddingTop="@dimen/_5sdp"
         android:paddingRight="@dimen/_20sdp"
         android:paddingBottom="@dimen/_15sdp"
-        android:text="طلب الباقة"
+        android:text="@string/Package_Request"
         android:textColor="@color/white"
         android:textSize="@dimen/_25sdp"
         app:layout_constraintBottom_toBottomOf="parent"

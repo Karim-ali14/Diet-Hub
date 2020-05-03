@@ -241,7 +241,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
-            android:text="وصف الوجبة"
+            android:text="@string/Meal_Description"
             android:textColor="#000"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -310,7 +310,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="التقييمات"
+                        android:text="@string/Ratings"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:textColor="@color/colorPrimary"
@@ -330,7 +330,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="إضافات اخري"
+            android:text="@string/Anther_Adds"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardOfRating"
             android:textSize="22dp"
@@ -351,59 +351,56 @@
             android:id="@+id/RecyclerOfAdds"
             android:visibility="visible"/>
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RecyclerOfAdds"
-            android:padding="5dp"
+            android:padding="@dimen/_10sdp"
             android:gravity="center_horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
                 <ImageButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:background="@drawable/plus"
-                    android:scaleType="fitStart"
-                    />
+                    android:scaleType="fitStart" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:text="2"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="25dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:textSize="25dp" />
 
                 <ImageButton
-                    android:background="@drawable/minus"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:scaleType="fitStart"
-                    />
+                    android:background="@drawable/minus"
+                    android:scaleType="fitStart" />
             </LinearLayout>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardOfList"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/colorPrimary"
-                app:cardCornerRadius="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                >
+                android:backgroundTint="@color/colorPrimary"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -424,7 +421,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
                         android:layout_marginRight="12dp"
-                        android:text="إضافه"
+                        android:text="@string/Add"
                         android:textColor="@color/white"
                         android:textSize="18dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -478,6 +475,6 @@
             </androidx.cardview.widget.CardView>
 
 
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -22,21 +22,48 @@
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="رقم الطلب : 5456542156"
-                    android:layout_gravity="center"
-                    style="@style/TitleStyle"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/back"
-                    android:layout_gravity="right"
-                    android:onClick="BackButton"
-                    />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/NumberOfOrderText"
+                            style="@style/TitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/NumberOfOrder" />
+
+                        <TextView
+                            android:id="@+id/NumberOfOrder"
+                            style="@style/TitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 5456542156"
+
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:onClick="BackButton"
+                        android:src="@drawable/back"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
         <LinearLayout
@@ -57,7 +84,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/helvetica_bold"
-                android:text="تفاصيل الطلب"
+                android:text="@string/OrderDetails"
                 android:textColor="#000"
                 android:textSize="@dimen/_22sdp" />
 
@@ -109,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="الكمية : "
+                    android:text="@string/Count"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/helveticaneuelt_arabic"
-                        android:text="الاجمالي :"
+                        android:text="@string/Total"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/_17sdp"
                         />
@@ -198,7 +225,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="عموله التواصل : "
+                    android:text="@string/Commission_Communication"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp" />
 
@@ -309,7 +336,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="طريقه الدفع : "
+                    android:text="@string/Payment_Method"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -364,7 +391,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="حالة الطلب : "
+                    android:text="@string/Order_State"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -407,7 +434,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="عنوان التوصيل"
+                    android:text="@string/Delivery_Address"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp" />
 
@@ -444,7 +471,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/helveticaneuelt_arabic"
-                    android:text="المندوب : "
+                    android:text="@string/Delegate"
                     android:textColor="#000"
                     android:textSize="@dimen/_17sdp" />
 

@@ -262,7 +262,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:text="التقييمات"
+                        android:text="@string/Ratings"
                         android:textColor="@color/colorPrimary"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -307,7 +307,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="محتوي الباقة"
+                    android:text="@string/Package_Content"
                     android:textColor="@color/background"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -334,7 +334,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="محتوي الباقة"
+                    android:text="@string/Timing_Delivery"
                     android:textColor="@color/colorPrimary"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -518,7 +518,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="السعر الباقة"
+                    android:text="@string/PackagePrice"
                     android:textSize="17sp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
@@ -526,7 +526,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="الخصم"
+                    android:text="@string/Discount"
                     android:textSize="17sp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
@@ -534,7 +534,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="الاجالي"
+                    android:text="@string/Total"
                     android:textSize="17sp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic" />
@@ -542,7 +542,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="السعرات الحراية"
+                    android:text="@string/Calories"
                     android:textSize="17sp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
@@ -604,7 +604,7 @@
             android:layout_height="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
-            android:text="اضف الي السلة"
+            android:text="@string/Add_To_List"
             android:background="@color/colorPrimary"
             android:textColor="@color/white"
             android:textSize="19dp"/>

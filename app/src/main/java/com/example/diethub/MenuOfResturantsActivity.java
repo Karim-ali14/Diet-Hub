@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
@@ -60,7 +61,8 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
     private void dialogForFavorite(){
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_favorite, null);
-        LinearLayout ContainerButton = view.findViewById(R.id.ContainerButton);
+        Button ContainerButton = view.findViewById(R.id.ContainerButton);
+        TextView Massage = view.findViewById(R.id.Massage);
         Adialog.setView(view);
         final AlertDialog dialog1 = Adialog.create();
         dialog1.setCanceledOnTouchOutside(true);

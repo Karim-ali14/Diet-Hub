@@ -31,14 +31,14 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:includeFontPadding="false"
-            android:text="تم الإضافة للمفضلة بنجاح"
+            android:text="@string/Added_To_Favorites_Successfully"
             android:textColor="@color/text2"
             android:textSize="@dimen/_20sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Icon" />
 
-        <LinearLayout
+        <Button
             android:id="@+id/ContainerButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,19 +51,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Massage"
             android:layout_marginTop="@dimen/_15sdp"
-            >
-
-            <TextView
-                android:id="@+id/ButtonText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/helveticaneuelt_arabic"
-                android:includeFontPadding="false"
-                android:text="شاهد المفضلة"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp"
-                />
-        </LinearLayout>
+            android:text="@string/See_Favorites"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:fontFamily="@font/helveticaneuelt_arabic"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

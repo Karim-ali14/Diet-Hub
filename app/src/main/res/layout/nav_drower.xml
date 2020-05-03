@@ -63,7 +63,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
-                    android:text="home"
+                    android:text="@string/Home"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -128,7 +128,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My cart"
+                    android:text="@string/List_Shopping"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -161,7 +161,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
-                    android:text="My orders"
+                    android:text="@string/My_Order"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -194,7 +194,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
-                    android:text="My favorite"
+                    android:text="@string/My_Favorite"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -226,7 +226,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My Pay"
+                    android:text="@string/My_Pay"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -259,7 +259,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My packages"
+                    android:text="@string/My_Packages"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -292,7 +292,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My notifications"
+                    android:text="@string/My_Notifications"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -325,7 +325,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My Consulting"
+                    android:text="@string/My_Consulting"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -358,7 +358,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="My Calories"
+                    android:text="@string/My_Calories"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -391,7 +391,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="about us"
+                    android:text="@string/about_us"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -424,7 +424,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="privacy &amp; policy"
+                    android:text="@string/privacy_policy"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -457,7 +457,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="contact us"
+                    android:text="@string/Contact_Us"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -490,7 +490,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="language"
+                    android:text="@string/Lang"
                     android:textSize="15sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
@@ -513,7 +513,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SignOut"
+                    android:text="@string/SignOut"
                     android:textSize="@dimen/_20sdp"
                     android:textColor="@color/white"
                     android:layout_marginLeft="@dimen/_5sdp"
