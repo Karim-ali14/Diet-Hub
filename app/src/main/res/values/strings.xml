@@ -68,7 +68,7 @@
     <string name="Time_Work">Times of work</string>
     <string name="Geographical_Location">Geographical Location</string>
     <string name="Res_Photo">Photo Of Restaurant</string>
-    <string name="NumberOfOrder">Number Of Order :</string>
+    <string name="NumberOfOrder">Order"'"s Number :</string>
     <string name="OrderDetails">Order Details</string>
     <string name="Count">Count :</string>
     <string name="Total">Total :</string>
@@ -115,8 +115,8 @@
     <string name="Third">Third</string>
     <string name="Have_Inquiry">If you have any questions, please contact us via WhatsApp</string>
     <string name="My_Orders">My Orders</string>
-    <string name="Being_Processed">Being Processed</string>
-    <string name="Delivery_In_Progress">Delivery In Progress</string>
+    <string name="Being_Processed">Processed</string>
+    <string name="Delivery_In_Progress">Delivery</string>
     <string name="Received">Received</string>
     <string name="MyPackages">MyPackages</string>
     <string name="Primary_PaymentMethod">Primary payment method</string>
@@ -167,5 +167,15 @@
     <string name="Lang">language</string>
     <string name="SignOut">SignOut</string>
     <string name="Added_To_Favorites_Successfully">Added to favorites successfully</string>
+    <string name="Add_Code">Add Code</string>
+    <string name="Change">Change</string>
+    <string name="Password_Retrieved_Successfully">Password retrieved successfully</string>
+    <string name="Account_Created_Successfully">Your account has been created successfully</string>
+    <string name="Do_Cancel_Order">Do you want to cancel the request ?</string>
+    <string name="Meals">Meals</string>
+    <string name="Add_Address_Successfully">The address was added successfully</string>
+    <string name="Add_Discount_Code_Successfully">Discount code added successfully</string>
+    <string name="Type_Your_experience_Here">أكتب هنا تجربتك</string>
+    <string name="Report">تم إرسال التبليغ عن التقييم</string>
 
 </resources>

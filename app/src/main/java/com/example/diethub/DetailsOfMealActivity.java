@@ -2,7 +2,6 @@ package com.example.diethub;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +14,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -103,7 +103,7 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
         if (view.getId() == R.id.favoriteIcon){
             dialogForFavorite();
         }else if (view.getId() == R.id.ListIcon)
-            startActivity(new Intent(this,ListOrderActivity2.class));
+            startActivity(new Intent(this, ListOrderActivity.class));
         else if (view.getId() == R.id.CaloriesLayout)
             dialogForCalories();
     }
@@ -111,7 +111,7 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
     private void dialogForFavorite(){
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_favorite, null);
-        LinearLayout ContainerButton = view.findViewById(R.id.ContainerButton);
+        Button ContainerButton = view.findViewById(R.id.ContainerButton);
         Adialog.setView(view);
         final AlertDialog dialog1 = Adialog.create();
         dialog1.setCanceledOnTouchOutside(false);

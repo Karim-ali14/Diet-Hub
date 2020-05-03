@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
@@ -79,7 +80,7 @@ public class AdapterForRestaurants extends RecyclerView.Adapter<AdapterForRestau
     private void dialogForFavorite(){
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(context);
         View view = LayoutInflater.from(context).inflate(R.layout.dialog_favorite, null);
-        LinearLayout ContainerButton = view.findViewById(R.id.ContainerButton);
+        Button ContainerButton = view.findViewById(R.id.ContainerButton);
         Adialog.setView(view);
         final AlertDialog dialog1 = Adialog.create();
         dialog1.setCanceledOnTouchOutside(true);

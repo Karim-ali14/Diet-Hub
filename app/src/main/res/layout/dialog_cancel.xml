@@ -64,6 +64,8 @@
                 android:background="@drawable/s_bb"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+
                 />
             <Button
                 android:id="@+id/ButtonCancel"
@@ -78,6 +80,7 @@
                 android:background="@drawable/style_number_calories"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
                 />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

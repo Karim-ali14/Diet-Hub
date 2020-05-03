@@ -33,7 +33,7 @@
             />
 
         <TextView
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,11 +42,12 @@
             android:paddingBottom="10dp"
             android:gravity="center"
             android:text="@string/Select_To_Complete_Browsing"
-            android:textSize="19dp"
+            android:textSize="@dimen/_19sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Points"
             android:fontFamily="@font/helveticaneuelt_arabic"
+            android:includeFontPadding="false"
             android:textColor="#474747"
             />
 
@@ -63,6 +64,7 @@
             android:id="@+id/ResLayout"
             android:onClick="onClick"
             android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
             >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -130,7 +132,7 @@
             android:layout_width="0dp"
             android:layout_height="145dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="@color/colorPrimary"
             android:onClick="onClick"

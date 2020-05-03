@@ -170,5 +170,13 @@
     <string name="Lang">اللغة</string>
     <string name="SignOut">تسجيل الخروج</string>
     <string name="Added_To_Favorites_Successfully">تم الإضافة للمفضلة بنجاح</string>
+    <string name="Add_Code">اضافة كود</string>
+    <string name="Change">تغيير</string>
+    <string name="Password_Retrieved_Successfully">تم إسترجاع كلمة المرور بنجاح</string>
+    <string name="Account_Created_Successfully">تم إنشاء حسابك بنجاح</string>
+    <string name="Do_Cancel_Order">هل تريد الغاء الطلب ؟</string>
+    <string name="Meals">وجبان</string>
+    <string name="Add_Address_Successfully">تم إضافة العنوان بنجاح</string>
+    <string name="Add_Discount_Code_Successfully">تم إضافة كود الخصم بنجاح</string>
 
 </resources>

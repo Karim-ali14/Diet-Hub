@@ -123,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="86dp"
                 android:layout_weight="1"
-                android:hint="أكتب هنا تجربتك"
+                android:hint="@string/Type_Your_experience_Here"
                 android:inputType="textCapSentences|textMultiLine"
                 android:maxLength="2000"
                 android:maxLines="4"

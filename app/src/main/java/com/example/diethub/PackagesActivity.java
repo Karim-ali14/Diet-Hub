@@ -39,6 +39,6 @@ public class PackagesActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        startActivity(new Intent(this,ListOrderActivity2.class));
+        startActivity(new Intent(this, ListOrderActivity.class));
     }
 }

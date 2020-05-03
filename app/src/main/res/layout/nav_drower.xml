@@ -64,7 +64,9 @@
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
                     android:text="@string/Home"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -96,8 +98,10 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
-                    android:text="@string/my_profile"
-                    android:textSize="15sp" />
+                    android:text="@string/Myaccount"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -129,7 +133,9 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:text="@string/List_Shopping"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -162,7 +168,9 @@
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
                     android:text="@string/My_Order"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -195,7 +203,9 @@
                     android:layout_marginLeft="20dp"
                     android:gravity="start"
                     android:text="@string/My_Favorite"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -228,7 +238,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/My_Pay"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -261,7 +273,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/My_Packages"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -294,7 +308,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/My_Notifications"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -327,7 +343,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/My_Consulting"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -360,7 +378,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/My_Calories"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -393,7 +413,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/about_us"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -426,7 +448,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/privacy_policy"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -459,7 +483,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/Contact_Us"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false" />
             </LinearLayout>
 
             <LinearLayout
@@ -492,7 +518,9 @@
                     android:layout_marginLeft="20dp"
                     android:text="@string/Lang"
                     android:textSize="15sp"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -501,8 +529,8 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
-                android:paddingBottom="@dimen/_10sdp"
-                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
@@ -519,6 +547,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:includeFontPadding="false"
                     android:paddingBottom="@dimen/_5sdp"
                     />
             </LinearLayout>

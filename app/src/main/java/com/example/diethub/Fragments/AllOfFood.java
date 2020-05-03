@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diethub.Adapters.AdapterForMenu;
-import com.example.diethub.ListOrderActivity2;
+import com.example.diethub.ListOrderActivity;
 import com.example.diethub.Models.DataOfMenu;
 import com.example.diethub.Models.DataOfRestaurants;
 import com.example.diethub.R;
@@ -44,7 +44,7 @@ public class AllOfFood extends Fragment {
         listText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ListOrderActivity2.class));
+                startActivity(new Intent(getActivity(), ListOrderActivity.class));
             }
         });
         if (bool)

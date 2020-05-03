@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
-
-import com.example.diethub.Adapters.CustomExpandableListAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -105,6 +102,6 @@ public class Details_Package_Activity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        startActivity(new Intent(this,ListOrderActivity2.class));
+        startActivity(new Intent(this, ListOrderActivity.class));
     }
 }

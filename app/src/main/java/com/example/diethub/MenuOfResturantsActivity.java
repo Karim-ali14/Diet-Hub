@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -94,7 +93,7 @@ public class MenuOfResturantsActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.packages) {
             startActivity(new Intent(this, PackagesActivity.class));
         } else if (view.getId() == R.id.ListIcon) {
-            startActivity(new Intent(this, ListOrderActivity2.class));
+            startActivity(new Intent(this, ListOrderActivity.class));
         }
     }
 }

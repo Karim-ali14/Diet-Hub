@@ -25,12 +25,10 @@ public class NewPassword_Activity extends AppCompatActivity {
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_registraion_success, null);
         TextView Massage = view.findViewById(R.id.Massage);
-        TextView ButtonText = view.findViewById(R.id.ButtonText);
-        LinearLayout Button = view.findViewById(R.id.ButtonsLayout);
+        Button LoginButton = view.findViewById(R.id.LoginButton);
         Adialog.setView(view);
-        Massage.setText("تم إسترجاع كلمة المرور بنجاح");
-        ButtonText.setText("تسجيل دخول");
-        Button.setOnClickListener(new View.OnClickListener() {
+        Massage.setText(getResources().getString(R.string.Password_Retrieved_Successfully));
+        LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NewPassword_Activity.this,Login_inActivity.class));

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration_Activity">
+    tools:context=".Registration_Activity"
+    android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -223,19 +224,21 @@
             android:id="@+id/EnterButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
             android:background="@drawable/style_rating2"
+            android:onClick="onClick"
             android:paddingTop="@dimen/_10sdp"
             android:paddingBottom="@dimen/_17sdp"
+            android:text="@string/Create_Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:onClick="onClick"
-            android:textSize="@dimen/_17sdp"
-            android:textColor="@color/white"
-            android:text="@string/Create_Account"
-            />
+            app:layout_constraintVertical_bias=".1"
+            android:layout_marginBottom="@dimen/_20sdp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

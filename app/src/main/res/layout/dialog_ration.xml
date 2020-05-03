@@ -31,7 +31,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
             android:includeFontPadding="false"
-            android:text="تم إرسال التبليغ عن التقييم"
+            android:text="@string/Report"
             android:textColor="#000"
             android:textSize="@dimen/_20sdp"
             app:layout_constraintEnd_toEndOf="parent"

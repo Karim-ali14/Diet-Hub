@@ -43,7 +43,8 @@
                         android:src="@drawable/back"
                         android:layout_gravity="right"
                         android:onClick="BackButton"
-
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
                         />
                 </androidx.appcompat.widget.Toolbar>
             </com.google.android.material.appbar.AppBarLayout>
@@ -63,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_textinput"
-                android:drawableRight="@drawable/edit2"
+                android:drawableStart="@drawable/edit2"
                 android:drawablePadding="@dimen/_7sdp"
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:gravity="right"
@@ -82,7 +83,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView14"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"/>
+                android:layout_marginRight="@dimen/_20sdp"
+                android:drawableLeft="@drawable/edit2" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout9"

@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity
         else if (itemId == R.id.myOrders)
             startActivity(new Intent(this,Orders_Activity.class));
         else if (itemId == R.id.listOrder)
-            startActivity(new Intent(this, ListOrderActivity2.class));
+            startActivity(new Intent(this, ListOrderActivity.class));
         return false;
     }
 
@@ -125,7 +125,7 @@ public class HomeActivity extends AppCompatActivity
         else if (itemId == R.id.nav_myOrders)
             startActivity(new Intent(this,Orders_Activity.class));
         else if (itemId == R.id.nav_listOrder)
-            startActivity(new Intent(this, ListOrderActivity2.class));
+            startActivity(new Intent(this, ListOrderActivity.class));
         else if (itemId == R.id.nav_favorite)
             startActivity(new Intent(this, FavoriteActivity.class));
         else if (itemId == R.id.nav_packages)

@@ -22,7 +22,7 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="تعديل المعلومات الشخصية"
+                android:text="@string/Modify_Personal_Info"
                 android:layout_gravity="center"
                 style="@style/TitleStyle"
                 />
@@ -32,6 +32,8 @@
                 android:src="@drawable/back"
                 android:layout_gravity="right"
                 android:onClick="BackButton"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
                 />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>

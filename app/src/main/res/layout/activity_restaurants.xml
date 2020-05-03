@@ -39,8 +39,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:src="@drawable/location"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
                     android:onClick="onClick"
                     />
                 <ImageView
@@ -48,8 +48,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:src="@drawable/search"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"/>
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
 

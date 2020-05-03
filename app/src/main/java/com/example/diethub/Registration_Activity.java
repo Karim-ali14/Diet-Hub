@@ -38,12 +38,11 @@ public class Registration_Activity extends AppCompatActivity {
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_registraion_success, null);
         TextView Massage = view.findViewById(R.id.Massage);
-        TextView ButtonText = view.findViewById(R.id.ButtonText);
-        LinearLayout Button = view.findViewById(R.id.ButtonsLayout);
+        Button LoginButton = view.findViewById(R.id.LoginButton);
         Adialog.setView(view);
-        Massage.setText("تم إنشاء حسابك بنجاح");
-        ButtonText.setText("تسجيل دخول");
-        Button.setOnClickListener(new View.OnClickListener() {
+        Massage.setText(getResources().getString(R.string.Account_Created_Successfully));
+        LoginButton.setText(getResources().getString(R.string.Login));
+        LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Registration_Activity.this,Login_inActivity.class));
