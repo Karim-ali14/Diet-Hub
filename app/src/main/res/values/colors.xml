@@ -9,6 +9,7 @@
     <color name="default_item">#B9B9B9</color>
     <color name="background">#F3F3F3</color>
     <color name="background2">#DBDADA</color>
+    <color name="searchBar">#EBEBEB</color>
     <color name="text">#B9B9B9</color>
     <color name="text2">#474747</color>
     <color name="colorLine">#688D8C8C</color>

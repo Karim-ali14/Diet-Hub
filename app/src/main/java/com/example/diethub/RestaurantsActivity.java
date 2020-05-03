@@ -2,6 +2,7 @@ package com.example.diethub;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,7 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,12 +33,37 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
     LinearLayout points;
     List<Integer> list;
     RecyclerView Recycler;
+    ConstraintLayout Search_layout;
+    ImageView searchIcon,closeIcon;
+    EditText search_bar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants);
         viewPager = findViewById(R.id.viewPager);
         points = findViewById(R.id.points);
+        Search_layout = findViewById(R.id.Search_layout);
+        searchIcon = findViewById(R.id.searchIcon);
+        closeIcon = findViewById(R.id.closeIcon);
+        search_bar = findViewById(R.id.search_bar);
+        search_bar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                search_bar.setText("");
+            }
+        });
+        searchIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Search_layout.setVisibility(View.VISIBLE);
+            }
+        });
+        closeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Search_layout.setVisibility(View.GONE);
+            }
+        });
         list = new ArrayList<>();
         list.add(R.drawable.dd);
         list.add(R.drawable.uu);
