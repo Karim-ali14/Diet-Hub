@@ -27,10 +27,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RestaurantsActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
-        ViewPager viewPager;
-        LinearLayout points;
-        List<Integer> list;
-        RecyclerView Recycler;
+    ViewPager viewPager;
+    LinearLayout points;
+    List<Integer> list;
+    RecyclerView Recycler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

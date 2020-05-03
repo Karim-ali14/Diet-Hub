@@ -70,17 +70,22 @@
                 android:textColor="#000"
                 android:textSize="@dimen/_17sdp"
                 />
-            <RatingBar
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:rating="3"
-                android:theme="@style/RatingBar"
+                app:srb_starSize="40dp"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                app:srb_stepSize="0.5"
+                app:srb_borderColor="@color/colorPrimary"
+                app:srb_fillColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
                 />
             <View
                 android:id="@+id/line"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:background="@color/colorLine"
                 app:layout_constraintTop_toBottomOf="@+id/textView31"
                 />
@@ -92,16 +97,22 @@
                 android:textColor="#000"
                 android:textSize="@dimen/_17sdp"
                 />
-            <RatingBar
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:rating="3"
+                app:srb_starSize="40dp"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                app:srb_stepSize="0.5"
+                app:srb_borderColor="@color/colorPrimary"
+                app:srb_fillColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
                 />
             <View
                 android:id="@+id/line2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:background="@color/colorLine"
                 app:layout_constraintTop_toBottomOf="@+id/textView31"
                 />
@@ -113,10 +124,16 @@
             android:textColor="#000"
             android:textSize="@dimen/_17sdp"
             />
-            <RatingBar
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:rating="3"
+                app:srb_starSize="40dp"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                app:srb_stepSize="0.5"
+                app:srb_borderColor="@color/colorPrimary"
+                app:srb_fillColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
                 />
             <EditText
                 android:id="@+id/RatingBox"
@@ -130,12 +147,13 @@
                 android:background="@drawable/style_pop_edittext"
                 android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:padding="@dimen/_10sdp"/>
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/style_button3"
                 android:text="@string/Add_Your_rating"
                 android:textSize="@dimen/_17sdp"

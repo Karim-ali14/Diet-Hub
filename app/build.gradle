@@ -41,4 +41,8 @@ dependencies {
 
     //Ring Bar
     implementation 'com.github.HotBitmapGG:RingProgressBar:V1.2.2'
+
+    // Simple Rating bar
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+
 }
