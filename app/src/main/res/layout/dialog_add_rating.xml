@@ -10,7 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/_20sdp">
+        android:paddingBottom="@dimen/_20sdp"
+        android:id="@+id/Layout">
         <TextView
             android:id="@+id/textView31"
             android:layout_width="wrap_content"
@@ -149,11 +150,7 @@
                 android:layout_marginRight="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:textSize="@dimen/_17sdp"
-                android:padding="@dimen/_10sdp"
-                android:textAlignment="viewStart"
-                android:gravity="start"
-                android:fontFamily="@font/helveticaneuelt_arabic"
-                android:includeFontPadding="false"
+                android:theme="@style/EditText_Style"
                 />
             <Button
                 android:layout_width="wrap_content"

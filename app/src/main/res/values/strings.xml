@@ -171,6 +171,7 @@
     <string name="Change">Change</string>
     <string name="Password_Retrieved_Successfully">Password retrieved successfully</string>
     <string name="Account_Created_Successfully">Your account has been created successfully</string>
+    <string name="Modify_Successfully">Modify password successfully</string>
     <string name="Do_Cancel_Order">Do you want to cancel the request ?</string>
     <string name="Meals">Meals</string>
     <string name="Add_Address_Successfully">The address was added successfully</string>

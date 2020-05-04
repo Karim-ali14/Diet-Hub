@@ -1,13 +1,17 @@
 package com.example.diethub.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,6 +22,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diethub.Details_OrderActivity;
@@ -29,6 +34,8 @@ import com.example.diethub.R;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
 public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHolderForOrders> {
     List<String> list;
@@ -165,10 +172,12 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
             AllDetailsText = itemView.findViewById(R.id.AllDetailsText);
         }
     }
+
     private void dialogForRating(){
         final AlertDialog.Builder Adialog = new AlertDialog.Builder(context);
         View view = LayoutInflater.from(context).inflate(R.layout.dialog_add_rating, null);
-        EditText RatingBox = view.findViewById(R.id.RatingBox);
+        ConstraintLayout Layout = view.findViewById(R.id.Layout);
+        final EditText RatingBox = view.findViewById(R.id.RatingBox);
         ImageView closeIcon = view.findViewById(R.id.closeIcon);
         Button AddRatingButton = view.findViewById(R.id.AddRatingButton);
         Adialog.setView(view);
@@ -188,5 +197,19 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                 dialog1.dismiss();
             }
         });
+        Layout.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (!(v instanceof EditText))
+                    closeKeyBoard(dialog1,RatingBox);
+                return false;
+            }
+        });
+    }
+    public void closeKeyBoard(AlertDialog dialog,EditText RatingBox) {
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(dialog.getWindow().getDecorView().getRootView().getWindowToken(), 0);
+        dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        RatingBox.clearFocus();
     }
 }

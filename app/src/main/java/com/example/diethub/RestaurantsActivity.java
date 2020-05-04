@@ -14,8 +14,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -33,7 +35,7 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
     LinearLayout points;
     List<Integer> list;
     RecyclerView Recycler;
-    ConstraintLayout Search_layout;
+    ConstraintLayout Search_layout,Layout;
     ImageView searchIcon,closeIcon;
     EditText search_bar;
     @Override
@@ -43,6 +45,7 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
         viewPager = findViewById(R.id.viewPager);
         points = findViewById(R.id.points);
         Search_layout = findViewById(R.id.Search_layout);
+        Layout = findViewById(R.id.Layout);
         searchIcon = findViewById(R.id.searchIcon);
         closeIcon = findViewById(R.id.closeIcon);
         search_bar = findViewById(R.id.search_bar);
@@ -78,6 +81,20 @@ public class RestaurantsActivity extends AppCompatActivity implements ViewPager.
         getWindow().getDecorView().setSystemUiVisibility
                 (View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR |
                         View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        Layout.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (!(v instanceof EditText))
+                    closeKeyBoard();
+                return false;
+            }
+        });
+    }
+
+    private void closeKeyBoard() {
+        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(this.getWindow().getDecorView().getRootView().getWindowToken(), 0);
+        search_bar.clearFocus();
     }
 
     private void setPoints(int position){

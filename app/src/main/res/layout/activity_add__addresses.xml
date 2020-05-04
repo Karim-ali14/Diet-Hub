@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Add_AddressesActivity"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:id="@+id/Layout">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -75,7 +76,7 @@
                 android:drawablePadding="@dimen/_7sdp"
                 android:hint="@string/Enter_NameOf_Location"
                 android:importantForAutofill="noExcludeDescendants"
-                android:inputType="textPassword"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView14"

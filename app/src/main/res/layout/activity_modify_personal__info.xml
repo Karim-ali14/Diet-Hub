@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Modify_personal_InfoActivity"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:id="@+id/Layout">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppBer"
         android:layout_width="match_parent"
@@ -57,7 +58,7 @@
         >
 
         <EditText
-            android:id="@+id/Name"
+            android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_20sdp"
@@ -83,7 +84,7 @@
             android:importantForAutofill="noExcludeDescendants"
             android:inputType="textEmailAddress"
             android:textSize="@dimen/_17sdp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/UserName"
             android:layout_marginTop="@dimen/_10sdp"
             android:drawableLeft="@drawable/envelope"
             android:theme="@style/EditText_Style"/>

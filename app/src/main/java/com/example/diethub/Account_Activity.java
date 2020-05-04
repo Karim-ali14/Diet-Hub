@@ -26,7 +26,7 @@ public class Account_Activity extends AppCompatActivity {
         if (view.getId() == R.id.personal_informationCard)
             startActivity(new Intent(this,Personal_InformationActivity.class));
         else if (view.getId() == R.id.cardView2)
-            Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,Modify_PasswordActivity.class));
         else if (view.getId() == R.id.cardView3)
             startActivity(new Intent(this,Addresses_Activity.class));
         else if (view.getId() == R.id.CardView)

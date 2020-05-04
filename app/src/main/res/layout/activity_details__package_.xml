@@ -613,7 +613,8 @@
             android:textSize="@dimen/_17sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constraintLayout2" />
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+            android:onClick="onClick"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

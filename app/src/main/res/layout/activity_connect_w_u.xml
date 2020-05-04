@@ -10,7 +10,8 @@
     android:background="@color/background">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/Layout">
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/AppBer"
             android:layout_width="match_parent"
@@ -52,7 +53,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AppBer" />
         <EditText
-            android:id="@+id/Name"
+            android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
@@ -72,8 +73,8 @@
             android:background="@drawable/style_textinput"
             android:hint="@string/Email"
             android:importantForAutofill="noExcludeDescendants"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@+id/Name"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/UserName"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"

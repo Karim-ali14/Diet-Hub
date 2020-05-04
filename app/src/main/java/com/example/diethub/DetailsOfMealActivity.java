@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.diethub.Adapters.AdapterForSilder;
 import com.example.diethub.Adapters.AdapterOfAdds;
@@ -30,12 +32,15 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
     LinearLayout layout;
     List<Integer> list;
     RecyclerView recyclerView;
+    TextView Count;
+    int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_of_meal);
 
         viewPager = findViewById(R.id.ViewPager);
+        Count = findViewById(R.id.Count);
         list = new ArrayList<>();
         list.add(R.drawable.gggggg);
         list.add(R.drawable.diet);
@@ -106,6 +111,14 @@ public class DetailsOfMealActivity extends AppCompatActivity implements ViewPage
             startActivity(new Intent(this, ListOrderActivity.class));
         else if (view.getId() == R.id.CaloriesLayout)
             dialogForCalories();
+        else if (view.getId() == R.id.Decrement){
+            if (i > 0) {
+                Count.setText(--i + "");
+            }
+        }
+        else if (view.getId() == R.id.Increment){
+            Count.setText(++i+"");
+        }
     }
 
     private void dialogForFavorite(){

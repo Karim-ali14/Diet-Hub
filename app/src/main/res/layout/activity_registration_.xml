@@ -8,7 +8,8 @@
     android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/Layout">
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/AppBer"
             android:layout_width="match_parent"
@@ -62,14 +63,14 @@
             app:layout_constraintTop_toBottomOf="@+id/AppBer" />
 
         <EditText
-            android:id="@+id/NameOfUser"
+            android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
             android:drawableStart="@drawable/user_r"
             android:hint="@string/User_Name"
             android:importantForAutofill="noExcludeDescendants"
-            android:inputType="phone"
+            android:inputType="text"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
             android:layout_marginLeft="@dimen/_20sdp"
@@ -86,7 +87,7 @@
             android:importantForAutofill="noExcludeDescendants"
             android:inputType="phone"
             android:textSize="@dimen/_17sdp"
-            app:layout_constraintTop_toBottomOf="@+id/NameOfUser"
+            app:layout_constraintTop_toBottomOf="@+id/UserName"
             android:background="@drawable/style_textinput"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"

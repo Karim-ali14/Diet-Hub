@@ -84,7 +84,6 @@ public class ListOrderActivity extends AppCompatActivity {
         list.add(new ModelOfOrder("","","",""));
         list.add(new ModelOfOrder("","","",""));
         list.add(new ModelOfOrder("","","",""));
-
         return list;
     }
 

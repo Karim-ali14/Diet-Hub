@@ -7,10 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".Login_inActivity"
     android:background="@color/background"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/Layout">
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/AppBer"
             android:layout_width="match_parent"
@@ -76,16 +78,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/style_textinput"
             android:drawableStart="@drawable/phone"
-            android:drawablePadding="@dimen/_7sdp"
-            android:fontFamily="@font/helveticaneuelt_arabic"
             android:hint="@string/PhoneNumber"
             android:importantForAutofill="noExcludeDescendants"
-            android:includeFontPadding="false"
             android:inputType="phone"
-            android:paddingTop="@dimen/_10sdp"
-            android:paddingLeft="@dimen/_20sdp"
-            android:paddingRight="@dimen/_20sdp"
-            android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/textView29"
             app:layout_constraintWidth_percent=".9"
@@ -93,24 +88,16 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
             android:drawableLeft="@drawable/phone"
-            android:gravity="start"
-            android:textAlignment="viewStart"/>
+            android:theme="@style/EditText_Style"/>
 
         <EditText
             android:id="@+id/Password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/padlock"
-            android:drawablePadding="@dimen/_7sdp"
-            android:fontFamily="@font/helveticaneuelt_arabic"
             android:hint="@string/Password"
             android:importantForAutofill="noExcludeDescendants"
-            android:includeFontPadding="false"
             android:inputType="textPassword"
-            android:paddingTop="@dimen/_10sdp"
-            android:paddingLeft="@dimen/_20sdp"
-            android:paddingRight="@dimen/_20sdp"
-            android:paddingBottom="15dp"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
             android:background="@drawable/style_textinput"
@@ -119,8 +106,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_10sdp"
             android:drawableLeft="@drawable/padlock"
-            android:gravity="start"
-            android:textAlignment="viewStart"/>
+            android:theme="@style/EditText_Style"/>
 
         <TextView
             android:id="@+id/ForgottenPassword"
@@ -191,7 +177,9 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:onClick="onClick"/>
+                android:onClick="onClick"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

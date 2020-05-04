@@ -9,7 +9,8 @@
     android:background="@color/background">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/Layout">
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/AppBer"
             android:layout_width="match_parent"
@@ -93,23 +94,16 @@
                         android:src="@drawable/search"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
                     <EditText
                         android:id="@+id/search_bar"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:background="@color/searchBar"
-                        android:drawablePadding="@dimen/_7sdp"
-                        android:fontFamily="@font/helveticaneuelt_arabic"
-                        android:gravity="center"
                         android:importantForAutofill="noExcludeDescendants"
-                        android:includeFontPadding="false"
-                        android:inputType="phone"
-                        android:paddingLeft="@dimen/_20sdp"
-                        android:paddingTop="@dimen/_10sdp"
-                        android:paddingRight="@dimen/_20sdp"
-                        android:paddingBottom="15dp"
+                        android:inputType="text"
                         android:text="مطعم ال"
                         android:textColor="#B9B9B9"
                         android:textSize="@dimen/_17sdp"
@@ -118,6 +112,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/closeIcon"
                         app:layout_constraintStart_toEndOf="@+id/imageView23"
                         app:layout_constraintTop_toTopOf="parent"
+                        android:theme="@style/EditText_Style"
                          />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

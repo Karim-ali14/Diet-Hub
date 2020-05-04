@@ -126,6 +126,8 @@ public class HomeActivity extends AppCompatActivity
             startActivity(new Intent(this,Orders_Activity.class));
         else if (itemId == R.id.nav_listOrder)
             startActivity(new Intent(this, ListOrderActivity.class));
+        else if (itemId == R.id.nav_PaymentWays)
+            startActivity(new Intent(this, PaymentActivity.class));
         else if (itemId == R.id.nav_favorite)
             startActivity(new Intent(this, FavoriteActivity.class));
         else if (itemId == R.id.nav_packages)
