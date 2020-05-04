@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Received"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="19dp"
+                    android:textSize="@dimen/_17sdp"
                     android:textStyle="bold"
                     android:id="@+id/ProcessingText"/>
             </LinearLayout>
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Delivery_In_Progress"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="19dp"
+                    android:textSize="@dimen/_17sdp"
                     android:textStyle="bold"
                     android:id="@+id/DProgressText"/>
             </LinearLayout>
@@ -125,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Being_Processed"
                     android:textColor="@color/background"
-                    android:textSize="19dp"
+                    android:textSize="@dimen/_17sdp"
                     android:textStyle="bold"
                     android:id="@+id/ProcessedText"/>
             </LinearLayout>

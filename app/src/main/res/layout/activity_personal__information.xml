@@ -144,7 +144,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/Modify_Personal_Info"
         android:textColor="@color/white"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_17sdp"
         android:textStyle="bold"
         android:fontFamily="@font/helveticaneuelt_arabic"
         android:includeFontPadding="false"

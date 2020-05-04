@@ -59,24 +59,18 @@
             android:background="@drawable/style_textinput"
             android:drawableRight="@drawable/edit2"
             android:drawablePadding="@dimen/_7sdp"
-            android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="right"
             android:hint="@string/Enter_NameOf_Location"
             android:importantForAutofill="noExcludeDescendants"
-            android:includeFontPadding="false"
-            android:inputType="textPassword"
-            android:paddingLeft="@dimen/_20sdp"
-            android:paddingTop="@dimen/_10sdp"
-            android:paddingRight="@dimen/_20sdp"
-            android:paddingBottom="15dp"
+            android:inputType="text"
             android:textSize="@dimen/_17sdp"
-            app:counterMaxLength="10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"/>
+            android:layout_marginRight="@dimen/_20sdp"
+            android:theme="@style/EditText_Style"
+            />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout9"

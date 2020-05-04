@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Details_Package_Activity"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -90,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="باقة إيزي دايت"
-            android:textSize="22dp"
+            android:textSize="@dimen/_22sdp"
             android:textStyle="bold"
             android:textColor="#000"
             app:layout_constraintEnd_toEndOf="parent"
@@ -190,7 +191,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_star_black" />
+                    android:src="@drawable/calorie" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -311,7 +312,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Package_Content"
                     android:textColor="@color/background"
-                    android:textSize="22dp"
+                    android:textSize="17dp"
                     android:textStyle="bold"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"/>
@@ -338,7 +339,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Timing_Delivery"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="22dp"
+                    android:textSize="17dp"
                     android:textStyle="bold"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"/>
@@ -361,7 +362,8 @@
                 android:text="خليط من صدور وأوراك الفراخ المشوية على الفحم + التومية + السلطات والعيش السوري ذوق المذاق العالي + إضافات أخرى"
                 android:textColor="@color/text2"
                 android:fontFamily="@font/helveticaneuelt_arabic"
-                android:textSize="17sp"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/_15sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
@@ -521,7 +523,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/PackagePrice"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_17sdp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
 
@@ -529,7 +531,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Discount"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_17sdp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
 
@@ -537,7 +539,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Total"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_17sdp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic" />
 
@@ -545,7 +547,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Calories"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_17sdp"
                     android:textColor="#000"
                     android:fontFamily="@font/helveticaneuelt_arabic"/>
 
@@ -601,15 +603,17 @@
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
-            android:text="@string/Add_To_List"
             android:background="@color/colorPrimary"
+            android:text="@string/Add_To_List"
             android:textColor="@color/white"
-            android:textSize="19dp"/>
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

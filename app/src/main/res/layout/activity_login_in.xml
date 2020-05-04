@@ -78,7 +78,6 @@
             android:drawableStart="@drawable/phone"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="center"
             android:hint="@string/PhoneNumber"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
@@ -93,7 +92,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
-            android:drawableLeft="@drawable/phone" />
+            android:drawableLeft="@drawable/phone"
+            android:gravity="start"
+            android:textAlignment="viewStart"/>
 
         <EditText
             android:id="@+id/Password"
@@ -102,7 +103,6 @@
             android:drawableStart="@drawable/padlock"
             android:drawablePadding="@dimen/_7sdp"
             android:fontFamily="@font/helveticaneuelt_arabic"
-            android:gravity="center"
             android:hint="@string/Password"
             android:importantForAutofill="noExcludeDescendants"
             android:includeFontPadding="false"
@@ -118,7 +118,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/_10sdp"
-            android:drawableLeft="@drawable/padlock" />
+            android:drawableLeft="@drawable/padlock"
+            android:gravity="start"
+            android:textAlignment="viewStart"/>
 
         <TextView
             android:id="@+id/ForgottenPassword"

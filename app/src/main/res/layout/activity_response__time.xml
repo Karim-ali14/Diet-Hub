@@ -112,47 +112,82 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RadioButton
-        android:id="@+id/wait"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:paddingLeft="@dimen/_5sdp"
-        android:paddingBottom="@dimen/_10sdp"
-        android:privateImeOptions="5"
-        android:text="بانتظار الرد"
-        android:textSize="@dimen/_17sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
-        android:layout_marginRight="@dimen/_20sdp"/>
-
-    <View
-        android:id="@+id/Line"
-        android:layout_width="2dp"
-        android:layout_height="0dp"
-        android:background="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wait"
-        app:layout_constraintBottom_toTopOf="@id/radioButton2"
-        android:layout_marginLeft="@dimen/_30sdp"
-        android:layout_marginRight="@dimen/_30sdp"/>
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
         android:layout_marginTop="@dimen/_20sdp"
-        android:fontFamily="@font/helveticaneuelt_arabic"
-        android:paddingLeft="@dimen/_5sdp"
-        android:paddingBottom="@dimen/_10sdp"
-        android:privateImeOptions="5"
-        android:text="بانتظار الرد"
-        android:textSize="@dimen/_17sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wait"
-        android:layout_marginRight="@dimen/_20sdp"/>
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/RG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <RadioButton
+                    android:id="@+id/Family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="بانتظار الرد"
+                    android:textSize="@dimen/_17sdp" />
+
+                <RadioButton
+                    android:id="@+id/Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="جاري التحضير"
+                    android:textSize="@dimen/_17sdp" />
+
+                <RadioButton
+                    android:id="@+id/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="جاري التوصيل"
+                    android:textSize="@dimen/_17sdp" />
+
+                <RadioButton
+                    android:id="@+id/Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:fontFamily="@font/helveticaneuelt_arabic"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="تم الاستلام"
+                    android:textSize="@dimen/_17sdp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

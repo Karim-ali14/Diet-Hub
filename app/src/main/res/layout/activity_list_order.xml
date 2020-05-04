@@ -97,7 +97,7 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/Have_Code"
                 android:textColor="#000"
-                android:textSize="17sp"
+                android:textSize="@dimen/_17sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/imageView7"
                 app:layout_constraintTop_toTopOf="parent"
@@ -120,7 +120,7 @@
                     android:layout_margin="1dp"
                     android:text="@string/Add_Code"
                     android:textColor="@color/background"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -146,7 +146,7 @@
                 android:fontFamily="@font/helvetica_bold"
                 android:text="@string/Payment_Method_WithOut_Points"
                 android:textColor="#000"
-                android:textSize="17sp"
+                android:textSize="@dimen/_17sdp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -168,7 +168,7 @@
                 android:fontFamily="@font/helveticaneuelt_arabic"
                 android:text="البطاقه الإئئتمانية"
                 android:textColor="#000"
-                android:textSize="15dp"
+                android:textSize="@dimen/_15sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toBottomOf="@+id/bayText" />
@@ -193,7 +193,7 @@
                     android:layout_margin="1dp"
                     android:text="@string/Change"
                     android:textColor="@color/background"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -218,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ContactAddress"
                 android:textColor="#000"
-                android:textSize="17sp"
+                android:textSize="@dimen/_17sdp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -248,7 +248,7 @@
                     android:layout_marginRight="5dp"
                     android:text="الرياض , حي الروضه , شارع الامير محمد بن سلمان , منزل الشيخ قاسم الفهد"
                     android:textColor="#000"
-                    android:textSize="15dp"
+                    android:textSize="@dimen/_15sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -276,7 +276,7 @@
                     android:layout_margin="1dp"
                     android:text="@string/Change"
                     android:textColor="@color/background"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -285,7 +285,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent=".75" />
+                app:layout_constraintGuide_percent=".68" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -304,10 +304,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Payment_Details"
                 android:textColor="#000"
-                android:textSize="19dp"
+                android:textSize="@dimen/_17sdp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/helveticaneuelt_arabic"
+                android:includeFontPadding="false"/>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -412,7 +414,7 @@
                 android:paddingBottom="10dp"
                 android:text="@string/Executing_Request"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="@dimen/_17sdp"
                 android:textStyle="bold"/>
 
             <Button
@@ -427,7 +429,7 @@
                 android:paddingBottom="10dp"
                 android:text="@string/Cancelling_Order"
                 android:textColor="@color/colorPrimary"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textStyle="bold"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

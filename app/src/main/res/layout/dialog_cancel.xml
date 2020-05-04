@@ -65,7 +65,8 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
                 android:paddingBottom="@dimen/_5sdp"
-
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
                 />
             <Button
                 android:id="@+id/ButtonCancel"
@@ -81,6 +82,8 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
                 android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
                 />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
