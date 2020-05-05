@@ -35,12 +35,11 @@ public class Modify_PasswordActivity extends AppCompatActivity {
         NewPassword = findViewById(R.id.NewPassword);
         RePassword = findViewById(R.id.RePassword);
         Layout = findViewById(R.id.Layout);
-        Layout.setOnTouchListener(new View.OnTouchListener() {
+        Layout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
                 if (!(v instanceof EditText))
                     closeKeyBoard();
-                return false;
             }
         });
 

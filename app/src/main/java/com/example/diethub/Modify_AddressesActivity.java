@@ -25,12 +25,11 @@ public class Modify_AddressesActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         AddressName = findViewById(R.id.AddressName);
         Layout = findViewById(R.id.Layout);
-        Layout.setOnTouchListener(new View.OnTouchListener() {
+        Layout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
                 if (!(v instanceof EditText))
                     closeKeyBoard();
-                return false;
             }
         });
     }

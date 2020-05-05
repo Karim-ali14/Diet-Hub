@@ -36,7 +36,6 @@ public class AdapterForNotification extends RecyclerSwipeAdapter<AdapterForNotif
     public void onBindViewHolder(@NonNull ViewHolderForNotification holder, int position) {
         holder.swipeLayout.setShowMode(SwipeLayout.ShowMode.PullOut);
 
-        //dari kiri
         holder.swipeLayout.addDrag(SwipeLayout.DragEdge.Left, holder.swipeLayout.findViewById(R.id.bottom_wrapper1));
 
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +44,7 @@ public class AdapterForNotification extends RecyclerSwipeAdapter<AdapterForNotif
                 Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
             }
         });
+        mItemManger.bindView(holder.itemView, position);
     }
 
     @Override

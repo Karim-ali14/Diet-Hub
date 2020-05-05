@@ -197,12 +197,11 @@ public class AdapterForOrder extends RecyclerView.Adapter<AdapterForOrder.ViewHo
                 dialog1.dismiss();
             }
         });
-        Layout.setOnTouchListener(new View.OnTouchListener() {
+        Layout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
                 if (!(v instanceof EditText))
                     closeKeyBoard(dialog1,RatingBox);
-                return false;
             }
         });
     }

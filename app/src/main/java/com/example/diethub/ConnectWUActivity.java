@@ -28,12 +28,11 @@ public class ConnectWUActivity extends AppCompatActivity {
         Email = findViewById(R.id.Email);
         Text = findViewById(R.id.Text);
         Layout = findViewById(R.id.Layout);
-        Layout.setOnTouchListener(new View.OnTouchListener() {
+        Layout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
                 if (!(v instanceof EditText))
                     closeKeyBoard();
-                return false;
             }
         });
     }
